@@ -7,13 +7,207 @@
 </head>
 <body class="page">
     <header class="page__header">
-
+        <h1><span>RK</span>servis</h1>
+        <nav>
+            <div class="#" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <menu>
+                <li><a href="#">Úvod</a></li>
+                <li><a href="#">Lokace</a></li>
+                <li>
+                    <label for="services">Naše Služby</label>
+                    <select id="services" onchange="redirectToLink()">
+                        <option value="#">Autoservis</option>
+                        <option value="#">Pneuservis</option>
+                    </select>
+                </li>
+                <li><a href="#">Kontaktuj nás</a></li>
+            </menu>
+            <menu>
+                <li><a href="#">Úvod</a></li>
+                <li><a href="#">Lokace</a></li>
+                <li>
+                    <label for="services">Naše Služby</label>
+                    <select id="services" onchange="redirectToLink()">
+                        <option value="#">Autoservis</option>
+                        <option value="#">Pneuservis</option>
+                    </select>
+                </li>
+                <li><a href="#">Kontaktuj nás</a></li>
+            </menu>
+        </nav>
     </header>
     <main class="page__content">
+        <section class="offers">
+            <div class="container--ad">
+                <h2>Opravy Vozů Všech Značek Bez Čekání<span>!</span></h2>
+                <p><span>+420</span> 607 204 866</p>
+            </div>
+            <div class="container--cards">
+                <a href="#">
+                    <picture>
+                        <source srcset="./images/back/certificate.avif" type="image/avif">
+                        <source srcset="./images/back/certificate.webp" type="image/webp">
+                        <img class="#" src="./images/original/certificate.jpg" loading="lazy" width="400px" height="300px" alt="Certifikovaný Autoservis">
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture>
+                        <source srcset="./images/back/fast-pneuservis.avif" type="image/avif">
+                        <source srcset="./images/back/fast-pneuservis.webp" type="image/webp">
+                        <img class="#" src="./images/original/fast-pneuservis.jpg" loading="lazy" width="400px" height="300px" alt="Rychlý Pneuservis">
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture>
+                        <source srcset="./images/back/call-us.avif" type="image/avif">
+                        <source srcset="./images/back/call-us.webp" type="image/webp">
+                        <img class="#" src="./images/original/call-us.jpg" loading="lazy" width="400px" height="300px" alt="Zavolej Nám">
+                    </picture>
+                </a>
+            </div>
+        </section>
+        <div class="container--intro">
+            <h2>Vítejte V RKservise<span>!</span></h2>
+            <p>Najdeš nás u Šibeňáku v Jičíně</p>
+        </div>
+        <section class="about">
+            <article>
+                <header>
+                    <picture>
+                        <source srcset="./images/back/car-about.avif" type="image/avif">
+                        <source srcset="./images/back/car-about.webp" type="image/webp">
+                        <img class="#" src="./images/original/car-about.jpeg" loading="lazy" width="600px" height="412px" alt="Oprava Vozů">
+                    </picture>
+                </header>
+                <div>
+                    <p>Něco Málo O Nás<span>!</span></p>
+                    <p>V Jičíně opravujeme auta už roky a jsme tu jako doma!</p>
+                    <p>S autem pomůžeme ať už potřebujete připravit vůz na kontrolu STK, přezout pneu, opravit poruchy, nebo jen vyměnit olej.</p>
+                    <ul>
+                        <li>Záruka vysoké kvality</li> <!--::before-->
+                        <li>Tradice</li> <!--::before-->
+                        <li>Vstřícný přístup k zákazníkům</li> <!--::before-->
+                    </ul>
+                </div>
+                <footer>
+                    <a class="button" href="#">Zobrazit Více</a>
+                </footer>
+            </article>
+        </section>
+        <div class="container--intro">
+            <p>Máš Nějaké Otázky<span>?</span></p>
+            <p>Zavolej Nám Na <b>+420 607 204 866</b></p>
+        </div>
+        <section class="skills">
+            <article>
+                <header>
+                    <h3>AUTA ZNÁME</h3>
+                    <p>Od Brzdy Až Po Výfuk</p>
+                </header>
+                <div>
+                    <a class="button" href="#">Zavolej Nám</a>
+                </div>
+                <footer>
+                    <article>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/happy-customer.avif" type="image/avif">
+                                <source srcset="./images/back/happy-customer.webp" type="image/webp">
+                                <img class="#" src="./images/original/happy-customer.jpeg" loading="lazy" width="768px" height="511px" alt="Komunikace Se Zákazníkem">
+                            </picture>
+                        </figure>
+                        <p>Autodiagnostika</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/meeting.avif" type="image/avif">
+                                <source srcset="./images/back/meeting.webp" type="image/webp">
+                                <img class="#" src="./images/original/meeting.jpeg" loading="lazy" width="768px" height="512px" alt="Oprava A Servis">
+                            </picture>
+                        </figure>
+                        <p>Oprava a servis</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/testing-drive.avif" type="image/avif">
+                                <source srcset="./images/back/testing-drive.webp" type="image/webp">
+                                <img class="#" src="./images/original/testing-drive.jpeg" loading="lazy" width="768px" height="511px" alt="Příprava Na Kontrolu STK">
+                            </picture>
+                        </figure>
+                        <p>Příprava na kontrolu STK</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/pneumatik-girl.avif" type="image/avif">
+                                <source srcset="./images/back/pneumatik-girl.webp" type="image/webp">
+                                <img class="#" src="./images/original/pneumatik-girl.jpeg" loading="lazy" width="768px" height="511px" alt="Přezutí Pneumatik">
+                            </picture>
+                        </figure>
+                        <p>Přezutí pneumatik</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/fixing-white-car.avif" type="image/avif">
+                                <source srcset="./images/back/fixing-white-car.webp" type="image/webp">
+                                <img class="#" src="./images/original/fixing-white-car.jpeg" loading="lazy" width="600px" height="400px" alt="Oprava Karoserie">
+                            </picture>
+                        </figure>
+                        <p>Oprava Karoserie</p>
+                    </article>
+                    <article>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/fixing-car-engine.avif" type="image/avif">
+                                <source srcset="./images/back/fixing-car-engine.webp" type="image/webp">
+                                <img class="#" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="Rozvody motoru">
+                            </picture>
+                        </figure>
+                        <p>Rozvody motoru</p>
+                    </article>
+                </footer>
+            </article>
+        </section>
+        <section class="reviews">
+            <header>
+                <p>,,</p>
+            </header>
+            <div>
+                <h2>RECENZE</h2>
+                <p>Co Se O Nás Povídá<span>?</span></p>
+            </div>
+            <footer>
+                <article>
+                    <header>
+                        <a href="#">
+                            <!--END-->
+                            <picture>
+                                <source srcset="./images/back/fixing-car-engine.avif" type="image/avif">
+                                <source srcset="./images/back/fixing-car-engine.webp" type="image/webp">
+                                <img class="#" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="Eva Kočířová">
+                            </picture>
+                        </a>
+                    </header>
+                    <div>
 
+                    </div>
+                    <footer>
+                        
+                    </footer>
+                </article>
+            </footer>
+        </section>
     </main>
     <footer class="page__footer">
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
