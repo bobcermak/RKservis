@@ -3,48 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RKservis v Jičíně nabízí komplexní opravy aut, pneuservis, přípravu na STK, výměnu oleje a další profesionální služby. Navštivte nás a postarejte se o své auto!">
+    <meta name="keywords" content="RKservis, opravy aut, autoservis Jičín, pneuservis, příprava na STK, výměna oleje, opravy motorů, diagnostika vozidel, opravy karoserie, Jičín, opravy vozidel, autoopravna">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>RKservis Jičín - STK, pneu, opravy, olej</title>
 </head>
 <body class="page">
     <header class="page__header">
-        <h1><span>RK</span>servis</h1>
-        <nav>
-            <div class="#" onclick="toggleMenu()">
+        <nav class="page__nav">
+            <h1 class="page__nav-h1 p--size"><span>RK</span>servis</h1>
+            <div class="page_nav__hamburger page__nav__close-icon" onclick="toggleMenu()">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <menu>
-                <li><a href="#">Úvod</a></li>
+            <menu class="page__nav__hamburger-menu">
+                <li><a class="activeLi" href="#">Úvod</a></li>
                 <li><a href="#">Lokace</a></li>
-                <li>
-                    <label for="services">Naše Služby</label>
-                    <select id="services" onchange="redirectToLink()">
-                        <option value="#">Autoservis</option>
-                        <option value="#">Pneuservis</option>
-                    </select>
+                <li class="dropdown-hamburger">
+                    <a href="#">Naše Služby</a>
+                    <ul class="dropdown-menu-hamburger">
+                        <li><a href="autoservis.html">Autoservis</a></li>
+                        <li><a href="pneuservis.html">Pneuservis</a></li>
+                    </ul>
                 </li>
                 <li><a href="#">Kontaktuj nás</a></li>
             </menu>
-            <menu>
+            <!--Desktop-->
+            <menu class="page__nav__menu">
                 <li><a href="#">Úvod</a></li>
                 <li><a href="#">Lokace</a></li>
-                <li>
-                    <label for="services">Naše Služby</label>
-                    <select id="services" onchange="redirectToLink()">
-                        <option value="#">Autoservis</option>
-                        <option value="#">Pneuservis</option>
-                    </select>
+                <li class="dropdown">
+                    <a href="#">Naše Služby</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="autoservis.html">Autoservis</a></li>
+                        <li><a href="pneuservis.html">Pneuservis</a></li>
+                    </ul>
                 </li>
                 <li><a href="#">Kontaktuj nás</a></li>
             </menu>
         </nav>
     </header>
     <main class="page__content">
-        <section class="offers">
+        <section class="page__offers">
             <div class="container--ad">
                 <h2>Opravy Vozů Všech Značek Bez Čekání<span>!</span></h2>
-                <p><span>+420</span> 607 204 866</p>
+                <p><strong><span>+420</span> 607 204 866</strong></p>
             </div>
             <div class="container--cards">
                 <a href="#">
@@ -70,11 +74,11 @@
                 </a>
             </div>
         </section>
-        <div class="container--intro">
+        <div class="page__container--intro">
             <h2>Vítejte V RKservise<span>!</span></h2>
             <p>Najdeš nás u Šibeňáku v Jičíně</p>
         </div>
-        <section class="about">
+        <section class="page__about">
             <article>
                 <header>
                     <picture>
@@ -84,7 +88,7 @@
                     </picture>
                 </header>
                 <div>
-                    <p>Něco Málo O Nás<span>!</span></p>
+                    <p><b>Něco Málo O Nás<span>!</span></b></p>
                     <p>V Jičíně opravujeme auta už roky a jsme tu jako doma!</p>
                     <p>S autem pomůžeme ať už potřebujete připravit vůz na kontrolu STK, přezout pneu, opravit poruchy, nebo jen vyměnit olej.</p>
                     <ul>
@@ -98,15 +102,15 @@
                 </footer>
             </article>
         </section>
-        <div class="container--intro">
-            <p>Máš Nějaké Otázky<span>?</span></p>
-            <p>Zavolej Nám Na <b>+420 607 204 866</b></p>
+        <div class="page__container--questions">
+            <p><b>Máš Nějaké Otázky<span>?</span></b></p>
+            <p>Zavolej Nám Na <strong>+420 607 204 866</strong></p>
         </div>
-        <section class="skills">
+        <section class="page__skills">
             <article>
                 <header>
                     <h3>AUTA ZNÁME</h3>
-                    <p>Od Brzdy Až Po Výfuk</p>
+                    <p><b>Od Brzdy Až Po Výfuk</b></p>
                 </header>
                 <div>
                     <a class="button" href="#">Zavolej Nám</a>
@@ -120,7 +124,7 @@
                                 <img class="#" src="./images/original/happy-customer.jpeg" loading="lazy" width="768px" height="511px" alt="Komunikace Se Zákazníkem">
                             </picture>
                         </figure>
-                        <p>Autodiagnostika</p>
+                        <p><b>Autodiagnostika</b></p>
                     </article>
                     <article>
                         <figure>
@@ -130,7 +134,7 @@
                                 <img class="#" src="./images/original/meeting.jpeg" loading="lazy" width="768px" height="512px" alt="Oprava A Servis">
                             </picture>
                         </figure>
-                        <p>Oprava a servis</p>
+                        <p><b>Oprava a servis</b></p>
                     </article>
                     <article>
                         <figure>
@@ -140,7 +144,7 @@
                                 <img class="#" src="./images/original/testing-drive.jpeg" loading="lazy" width="768px" height="511px" alt="Příprava Na Kontrolu STK">
                             </picture>
                         </figure>
-                        <p>Příprava na kontrolu STK</p>
+                        <p><b>Příprava na kontrolu STK</b></p>
                     </article>
                     <article>
                         <figure>
@@ -150,7 +154,7 @@
                                 <img class="#" src="./images/original/pneumatik-girl.jpeg" loading="lazy" width="768px" height="511px" alt="Přezutí Pneumatik">
                             </picture>
                         </figure>
-                        <p>Přezutí pneumatik</p>
+                        <p><b>Přezutí pneumatik</b></p>
                     </article>
                     <article>
                         <figure>
@@ -160,7 +164,7 @@
                                 <img class="#" src="./images/original/fixing-white-car.jpeg" loading="lazy" width="600px" height="400px" alt="Oprava Karoserie">
                             </picture>
                         </figure>
-                        <p>Oprava Karoserie</p>
+                        <p><b>Oprava Karoserie</b></p>
                     </article>
                     <article>
                         <figure>
@@ -170,43 +174,137 @@
                                 <img class="#" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="Rozvody motoru">
                             </picture>
                         </figure>
-                        <p>Rozvody motoru</p>
+                        <p><b>Rozvody motoru</b></p>
                     </article>
                 </footer>
             </article>
         </section>
-        <section class="reviews">
-            <header>
-                <p>,,</p>
-            </header>
-            <div>
-                <h2>RECENZE</h2>
-                <p>Co Se O Nás Povídá<span>?</span></p>
-            </div>
-            <footer>
-                <article>
-                    <header>
-                        <a href="#">
-                            <!--END-->
-                            <picture>
-                                <source srcset="./images/back/fixing-car-engine.avif" type="image/avif">
-                                <source srcset="./images/back/fixing-car-engine.webp" type="image/webp">
-                                <img class="#" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="Eva Kočířová">
-                            </picture>
-                        </a>
-                    </header>
-                    <div>
-
-                    </div>
-                    <footer>
-                        
-                    </footer>
-                </article>
-            </footer>
+        <section class="page__reviews">
+            <article>
+                <header>
+                    <p>,,</p>
+                </header>
+                <div>
+                    <h2>RECENZE</h2>
+                    <p><b>Co Se O Nás Povídá<span>?</span></b></p>
+                </div>
+                <footer>
+                    <a href="#">
+                        <article>
+                            <header>
+                                <a href="#">
+                                    <picture>
+                                        <source srcset="./images/back/eva-kocirova.avif" type="image/avif">
+                                        <source srcset="./images/back/eva-kocirova.webp" type="image/webp">
+                                        <img class="#" src="./images/original/eva-kocirova.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
+                                    </picture>
+                                </a>
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/back/stars-transparent.avif" type="image/avif">
+                                        <source srcset="../images/back/stars-transparent.webp" type="image/webp">
+                                        <img class="#" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                                    </picture>
+                                </figure>
+                            </header>
+                            <div>
+                                <p>Velice ochotný a vstřícný přístup, neskutečné znalosti a zkušenosti v oboru. Oprava na počkání i s odtahem z nedaleké benzinky a dovozem náhradního dílu, vše během několika hodin. Mockrát děkujeme za pomoc a opravu 🙏🏻</p>
+                            </div>
+                            <footer>
+                                <p><b>Eva Kočířová</b></p>
+                                <p>Spokojený Zákazník</p>
+                            </footer>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>
+                            <header>
+                                <a href="#">
+                                    <picture>
+                                        <source srcset="./images/back/daniel.avif" type="image/avif">
+                                        <source srcset="./images/back/daniel.webp" type="image/webp">
+                                        <img class="#" src="./images/original/daniel.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
+                                    </picture>
+                                </a>
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/back/stars-transparent.avif" type="image/avif">
+                                        <source srcset="../images/back/stars-transparent.webp" type="image/webp">
+                                        <img class="#" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                                    </picture>
+                                </figure>
+                            </header>
+                            <div>
+                                <p>Maximální spokojenost s rychlostí oprav, kvalitou oprav, cenou i férovým přístupem, víc k tomu není třeba. Kdo jednou vyzkouší, servis už rozhodně nemění.. 😉</p>
+                            </div>
+                            <footer>
+                                <p><b>D a n i e l</b></p>
+                                <p>Spokojený Zákazník</p>
+                            </footer>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>
+                            <header>
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/back/petr-kousal.avif" type="image/avif">
+                                        <source srcset="./images/back/petr-kousal.webp" type="image/webp">
+                                        <img class="#" src="./images/original/petr-kousal.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
+                                    </picture>
+                                </figure>
+                                <figure>
+                                    <picture>
+                                        <source srcset="./images/back/stars-transparent.avif" type="image/avif">
+                                        <source srcset="../images/back/stars-transparent.webp" type="image/webp">
+                                        <img class="#" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                                    </picture>
+                                </figure>
+                            </header>
+                            <div>
+                                <p>Motorkáři v českém ráji mají v Panu Klabanovi a jeho RK-Servisu jistotu. Šikovný a velmi příjemný. Na motorkách i autech mu záleží. Takových lidí si zejména motorkáři váží...</p>
+                            </div>
+                            <footer>
+                                <p><b>Petr Kousal</b></p>
+                                <p>Spokojený Zákazník</p>
+                            </footer>
+                        </article>
+                    </a>
+                </footer>
+            </article>
         </section>
     </main>
     <footer class="page__footer">
-
+        <section class="page__container--number">
+            <i>#</i><!--Car-->
+            <p><strong>+420 607 204 866</strong></p>
+        </section>
+        <section class="page__contact">
+            <div class="contact__cantact-data">
+                <h3>Kontakt<span>:</span></h3>
+                <div class="adress">
+                    <h4>Adresa:</h4>
+                    <p>Šibeňák, 506 01 Jičín 1</p>
+                </div>
+                <div class="opening-hours">
+                    <h4>Otevírací Doba:</h4>
+                    <p>Po - Pá 9:00 - 17:00</p>
+                    <p>So - Ne - Zavřeno</p>
+                </div>
+                <div class="mobile-phone">
+                    <h4>Telefon:</h4>
+                    <p><strong>607 204 866</strong></p>
+                </div>
+            </div>
+            <div class="contact__iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.233582174746!2d15.371023699999999!3d50.43674970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ea3749806a9e5%3A0xa27ecff1879ee40!2sRKservis!5e0!3m2!1scs!2scz!4v1733585604472!5m2!1scs!2scz" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa zobrazující umístění RKservisu v Jičíně"></iframe>
+            </div>
+        </section>
+        <section class="page__flap">
+            <p><strong>Adresa:</strong> Šibeňák, 506 01 Jičín 1</p> <!--::before-->
+            <p><strong>Tel.:</strong> <a href="tel:+420607204866">607 204 866</a></p> <!--::before-->
+            <p><strong>Web:</strong> <a href="https://www.domena.cz" target="_blank">www.domena.cz</a></p> <!--::before-->
+        </section>
     </footer>
     <script src="script.js"></script>
 </body>

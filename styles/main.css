@@ -1,0 +1,47 @@
+@layer reset, init, content, components;
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap) layer(reset);
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap) layer(reset);
+@import url(normalize.css) layer(reset);
+@import url(layout.css) layer(content);
+@import url(components.css) layer(components);
+
+@layer reset {
+    :root {
+        --red: #FF4605;
+        --beige: #F8F7F7;
+        --black: #000000;
+        --white: #ffffff;
+    }
+
+    html {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: var(--black, #000000);
+        background-color: var(--white, #ffffff);
+        scroll-behavior: smooth;
+        overscroll-behavior: none;
+    }
+
+    body {
+        overscroll-behavior: none;
+    }
+}
+
+@layer init {
+
+    /*Presets*/
+
+    .img-responsive {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .p--size {
+        font-size: 1em;
+    }
+}
