@@ -3,7 +3,6 @@
 .page__header {
     background-color: var(--white, #ffffff);
     height: 11dvh;
-    border: 2px solid;
     font-size: 1em;
 }
 
@@ -36,7 +35,14 @@
     color: var(--black, #000000);
 }
 
+@media screen and (max-width: 768px) {
+    .page__nav-h1 {
+        margin-left: 1em;
+    }
+}
+
 /* Menu - desktop */
+
 .page__nav__menu {
     display: flex;
     gap: 3.125em;

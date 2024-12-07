@@ -82,7 +82,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .page__nav__hamburger-menu {
         display: none;
     }
