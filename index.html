@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RKservis v Jičíně nabízí komplexní opravy aut, pneuservis, přípravu na STK, výměnu oleje a další profesionální služby. Navštivte nás a postarejte se o své auto!">
     <meta name="keywords" content="RKservis, opravy aut, autoservis Jičín, pneuservis, příprava na STK, výměna oleje, opravy motorů, diagnostika vozidel, opravy karoserie, Jičín, opravy vozidel, autoopravna">
+    <link rel="icon" href="./images/original/test__logo.jpg"/>
     <link rel="stylesheet" href="./styles/main.css">
     <title>RKservis Jičín - STK, pneu, opravy, olej</title>
 </head>
@@ -21,23 +22,23 @@
                 <li><a class="activeLi" href="#">Úvod</a></li>
                 <li><a href="#">Lokace</a></li>
                 <li class="dropdown-hamburger">
-                    <a href="#">Naše Služby</a>
+                    <a class="exclude" href="#">Naše Služby</a>
                     <ul class="dropdown-menu-hamburger">
-                        <li><a href="autoservis.html">Autoservis</a></li>
-                        <li><a href="pneuservis.html">Pneuservis</a></li>
+                        <li><a href="#">Autoservis</a></li>
+                        <li><a href="#">Pneuservis</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Kontaktuj nás</a></li>
             </menu>
             <!--Desktop-->
             <menu class="page__nav__menu">
-                <li><a href="#">Úvod</a></li>
+                <li><a class="activeLi" href="#">Úvod</a></li>
                 <li><a href="#">Lokace</a></li>
                 <li class="dropdown">
-                    <a href="#">Naše Služby</a>
+                    <a class="exclude" href="#">Naše Služby</a>
                     <ul class="dropdown-menu">
-                        <li><a href="autoservis.html">Autoservis</a></li>
-                        <li><a href="pneuservis.html">Pneuservis</a></li>
+                        <li><a href="#">Autoservis</a></li>
+                        <li><a href="#">Pneuservis</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Kontaktuj nás</a></li>
@@ -51,25 +52,25 @@
                 <p><strong><span>+420</span> 607 204 866</strong></p>
             </div>
             <div class="container--cards">
-                <a href="#">
+                <a href="#" class="container--fix card--certifikate">
                     <picture>
                         <source srcset="./images/back/certificate.avif" type="image/avif">
                         <source srcset="./images/back/certificate.webp" type="image/webp">
-                        <img class="#" src="./images/original/certificate.jpg" loading="lazy" width="400px" height="300px" alt="Certifikovaný Autoservis">
+                        <img class="img-responsive card--certifikate__img" src="./images/original/certificate.jpg" loading="lazy" width="400px" height="300px" alt="Certifikovaný Autoservis">
                     </picture>
                 </a>
-                <a href="#">
+                <a href="#" class="container--fix card--pneu">
                     <picture>
                         <source srcset="./images/back/fast-pneuservis.avif" type="image/avif">
                         <source srcset="./images/back/fast-pneuservis.webp" type="image/webp">
-                        <img class="#" src="./images/original/fast-pneuservis.jpg" loading="lazy" width="400px" height="300px" alt="Rychlý Pneuservis">
+                        <img class="img-responsive card--pneu__img" src="./images/original/fast-pneuservis.jpg" loading="lazy" width="400px" height="300px" alt="Rychlý Pneuservis">
                     </picture>
                 </a>
-                <a href="#">
+                <a href="#" class="container--fix card--call">
                     <picture>
                         <source srcset="./images/back/call-us.avif" type="image/avif">
                         <source srcset="./images/back/call-us.webp" type="image/webp">
-                        <img class="#" src="./images/original/call-us.jpg" loading="lazy" width="400px" height="300px" alt="Zavolej Nám">
+                        <img class="img-responsive card--call__img" src="./images/original/call-us.jpg" loading="lazy" width="400px" height="300px" alt="Zavolej Nám">
                     </picture>
                 </a>
             </div>
@@ -84,7 +85,7 @@
                     <picture>
                         <source srcset="./images/back/car-about.avif" type="image/avif">
                         <source srcset="./images/back/car-about.webp" type="image/webp">
-                        <img class="#" src="./images/original/car-about.jpeg" loading="lazy" width="600px" height="412px" alt="Oprava Vozů">
+                        <img class="img-responsive" src="./images/original/car-about.jpeg" loading="lazy" width="600px" height="412px" alt="Oprava Vozů">
                     </picture>
                 </header>
                 <div>
@@ -121,7 +122,7 @@
                             <picture>
                                 <source srcset="./images/back/happy-customer.avif" type="image/avif">
                                 <source srcset="./images/back/happy-customer.webp" type="image/webp">
-                                <img class="#" src="./images/original/happy-customer.jpeg" loading="lazy" width="768px" height="511px" alt="Komunikace Se Zákazníkem">
+                                <img class="img-responsive" src="./images/original/happy-customer.jpeg" loading="lazy" width="768px" height="511px" alt="Komunikace Se Zákazníkem">
                             </picture>
                         </figure>
                         <p><b>Autodiagnostika</b></p>
@@ -131,7 +132,7 @@
                             <picture>
                                 <source srcset="./images/back/meeting.avif" type="image/avif">
                                 <source srcset="./images/back/meeting.webp" type="image/webp">
-                                <img class="#" src="./images/original/meeting.jpeg" loading="lazy" width="768px" height="512px" alt="Oprava A Servis">
+                                <img class="img-responsive" src="./images/original/meeting.jpeg" loading="lazy" width="768px" height="512px" alt="Oprava A Servis">
                             </picture>
                         </figure>
                         <p><b>Oprava a servis</b></p>
@@ -141,7 +142,7 @@
                             <picture>
                                 <source srcset="./images/back/testing-drive.avif" type="image/avif">
                                 <source srcset="./images/back/testing-drive.webp" type="image/webp">
-                                <img class="#" src="./images/original/testing-drive.jpeg" loading="lazy" width="768px" height="511px" alt="Příprava Na Kontrolu STK">
+                                <img class="img-responsive" src="./images/original/testing-drive.jpeg" loading="lazy" width="768px" height="511px" alt="Příprava Na Kontrolu STK">
                             </picture>
                         </figure>
                         <p><b>Příprava na kontrolu STK</b></p>
@@ -151,7 +152,7 @@
                             <picture>
                                 <source srcset="./images/back/pneumatik-girl.avif" type="image/avif">
                                 <source srcset="./images/back/pneumatik-girl.webp" type="image/webp">
-                                <img class="#" src="./images/original/pneumatik-girl.jpeg" loading="lazy" width="768px" height="511px" alt="Přezutí Pneumatik">
+                                <img class="img-responsive" src="./images/original/pneumatik-girl.jpeg" loading="lazy" width="768px" height="511px" alt="Přezutí Pneumatik">
                             </picture>
                         </figure>
                         <p><b>Přezutí pneumatik</b></p>
@@ -161,7 +162,7 @@
                             <picture>
                                 <source srcset="./images/back/fixing-white-car.avif" type="image/avif">
                                 <source srcset="./images/back/fixing-white-car.webp" type="image/webp">
-                                <img class="#" src="./images/original/fixing-white-car.jpeg" loading="lazy" width="600px" height="400px" alt="Oprava Karoserie">
+                                <img class="img-responsive" src="./images/original/fixing-white-car.jpeg" loading="lazy" width="600px" height="400px" alt="Oprava Karoserie">
                             </picture>
                         </figure>
                         <p><b>Oprava Karoserie</b></p>
@@ -171,7 +172,7 @@
                             <picture>
                                 <source srcset="./images/back/fixing-car-engine.avif" type="image/avif">
                                 <source srcset="./images/back/fixing-car-engine.webp" type="image/webp">
-                                <img class="#" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="Rozvody motoru">
+                                <img class="img-responsive" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="Rozvody motoru">
                             </picture>
                         </figure>
                         <p><b>Rozvody motoru</b></p>
@@ -196,14 +197,14 @@
                                     <picture>
                                         <source srcset="./images/back/eva-kocirova.avif" type="image/avif">
                                         <source srcset="./images/back/eva-kocirova.webp" type="image/webp">
-                                        <img class="#" src="./images/original/eva-kocirova.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
+                                        <img class="img-responsive" src="./images/original/eva-kocirova.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
                                     </picture>
                                 </a>
                                 <figure>
                                     <picture>
                                         <source srcset="./images/back/stars-transparent.avif" type="image/avif">
                                         <source srcset="../images/back/stars-transparent.webp" type="image/webp">
-                                        <img class="#" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                                        <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
                                     </picture>
                                 </figure>
                             </header>
@@ -223,14 +224,14 @@
                                     <picture>
                                         <source srcset="./images/back/daniel.avif" type="image/avif">
                                         <source srcset="./images/back/daniel.webp" type="image/webp">
-                                        <img class="#" src="./images/original/daniel.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
+                                        <img class="img-responsive" src="./images/original/daniel.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
                                     </picture>
                                 </a>
                                 <figure>
                                     <picture>
                                         <source srcset="./images/back/stars-transparent.avif" type="image/avif">
                                         <source srcset="../images/back/stars-transparent.webp" type="image/webp">
-                                        <img class="#" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                                        <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
                                     </picture>
                                 </figure>
                             </header>
@@ -250,14 +251,14 @@
                                     <picture>
                                         <source srcset="./images/back/petr-kousal.avif" type="image/avif">
                                         <source srcset="./images/back/petr-kousal.webp" type="image/webp">
-                                        <img class="#" src="./images/original/petr-kousal.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
+                                        <img class="img-responsive" src="./images/original/petr-kousal.png" loading="lazy" width="60px" height="60px" alt="Eva Kočířová">
                                     </picture>
                                 </figure>
                                 <figure>
                                     <picture>
                                         <source srcset="./images/back/stars-transparent.avif" type="image/avif">
                                         <source srcset="../images/back/stars-transparent.webp" type="image/webp">
-                                        <img class="#" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                                        <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
                                     </picture>
                                 </figure>
                             </header>
@@ -297,7 +298,7 @@
                 </div>
             </div>
             <div class="contact__iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.233582174746!2d15.371023699999999!3d50.43674970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ea3749806a9e5%3A0xa27ecff1879ee40!2sRKservis!5e0!3m2!1scs!2scz!4v1733585604472!5m2!1scs!2scz" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa zobrazující umístění RKservisu v Jičíně"></iframe>
+                <iframe class="iframe--fix" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.233582174746!2d15.371023699999999!3d50.43674970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ea3749806a9e5%3A0xa27ecff1879ee40!2sRKservis!5e0!3m2!1scs!2scz!4v1733585604472!5m2!1scs!2scz" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa zobrazující umístění RKservisu v Jičíně"></iframe>
             </div>
         </section>
         <section class="page__flap">
