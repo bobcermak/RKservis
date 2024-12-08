@@ -1,5 +1,21 @@
 //Header
 
+//Roll
+
+document.addEventListener('DOMContentLoaded', function() {
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('.page__header');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY < lastScrollY) {
+            header.classList.remove('page__header-hidden');
+        } else {
+            header.classList.add('page__header-hidden');
+        }
+        lastScrollY = window.scrollY;
+    });
+});
+
 //Side-bar
 
 function toggleMenu() {
@@ -26,3 +42,20 @@ headerLinks.forEach(link => {
         link.style.color = '#FF4605';
     }
 });
+
+//Animations
+
+document.addEventListener("DOMContentLoaded", () => {
+    const animations = [
+      { element: document.querySelector(".container--ad"), delay: 600 },
+      { element: document.querySelector(".cards__1"), delay: 900 },
+      { element: document.querySelector(".cards__2"), delay: 1100 },
+      { element: document.querySelector(".cards__3"), delay: 1300 }
+    ];
+  
+    animations.forEach(({ element, delay }) => {
+      setTimeout(() => {
+        if (element) element.classList.add("animate");
+      }, delay);
+    });
+  });

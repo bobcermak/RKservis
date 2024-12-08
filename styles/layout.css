@@ -1,9 +1,19 @@
 /*Header*/
 
 .page__header {
+    position: fixed;
+    top: var(--header--fixed);
+    left: var(--header--fixed);
+    right: var(--header--fixed);
     background-color: var(--white, #ffffff);
     height: 9dvh;
     font-size: 1em;
+    transition: top 0.3s;
+    z-index: 10000;
+}
+
+.page__header-hidden {
+    top: -100px;
 }
 
 .page__nav {
@@ -63,7 +73,7 @@
 
 .page__nav__menu {
     display: flex;
-    gap: var(--menu-gap, 1em);
+    gap: var(--gap, 1em);
 }
 
 /*Menu - mobile*/
@@ -90,7 +100,7 @@
     }
     
     .page__nav__hamburger-menu li a {
-        margin: 1em 0;
+        margin: var(--gap, 1em) 0;
         font-family: "DM Sans", sans-serif;
         font-size: 1.5em;
         text-decoration: none;
@@ -168,10 +178,10 @@
 
 .dropdown-menu-hamburger {
     display: none;
-    margin-top: 1em;
-    margin-bottom: -1em;
+    margin-top: var(--gap, 1em);
+    margin-bottom: calc(-1 * var(--gap, 1em));
     height: fit-content;
-    padding: 1em;
+    padding: var(--gap, 1em);
     padding-top: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-bottom: 0;
@@ -206,23 +216,25 @@
     display: flex;
     justify-content: center;
     background-image: url(../images/back/bg-car.avif), url(../images/back/bg-car.webp), url(../images/original/bg-car.jpg);
-    background-attachment: scroll;
-    height: 70dvh;
+    background-attachment: fixed;
+    height: 75dvh;
     width: 100%;
     background-position: center center;
     background-size: cover;
+    opacity: 0;
 }
 
 .container--ad {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 8em;
+    margin-top: 12em;
     height: max-content;
     width: max-content;
     max-width: 35em;
     color: var(--white, #ffffff);
     background-color: var(--semi-transparent__black);
+    opacity: 0;
 }
 
 .container--ad__h2 {
@@ -249,16 +261,36 @@
     color: var(--red, #FF4605);
 }
 
-@media screen and (min-width: 768px){
-    .container--ad {
-        
-    }
-}
-
 .container--ad h2 {
     margin: 0;
 }
 
-.card--certifikate__img, .card--pneu__img, .card--call__img {
-    max-width: 22em;
+.container--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap, 1em);
+    margin: -8em auto;
+}
+
+.cards__1, .cards__2, .cards__3 {
+    padding: var(--gap, 1em);
+    max-width: 24em;
+    opacity: 0;
+}
+
+@media screen and (min-width: 768px){
+    .cards__1, .cards__2, .cards__3{
+        flex-basis: 30%;
+    }
+}
+  
+/*Delay*/
+
+.container--ad.animate, .cards__1.animate, .cards__2.animate, .cards__3.animate {
+    animation: slide-up .5s ease-in-out forwards;
+}
+
+.container--bg {
+    animation: show-up .6s ease-in-out forwards;
 }

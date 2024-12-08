@@ -12,7 +12,8 @@
         --black: #000000;
         --white: #ffffff;
         --semi-transparent__black: rgba(0, 0, 0, 0.5);
-        --menu-gap: 1em;
+        --gap: 1em;
+        --header--fixed: 0;
     }
 
     html {
