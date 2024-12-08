@@ -19,6 +19,7 @@
     display: inline-block;
     font-size: 1.25em;
     z-index: 1050;
+    margin-left: 1em;
 }
 
 .page__nav-h1 span {
@@ -30,12 +31,13 @@
 .page__nav__menu li {
     list-style: none;
     padding: 1em;
+    cursor: pointer;
 }
 
 .page__nav__menu li a {
+    position: relative;
     text-decoration: none;
     color: var(--black, #000000);
-    position: relative;
 }
 
 .page__nav__menu li a:not(.exclude)::after {
@@ -57,17 +59,11 @@
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .page__nav-h1 {
-        margin-left: 1em;
-    }
-}
-
 /*Menu - desktop*/
 
 .page__nav__menu {
     display: flex;
-    gap: 1em;
+    gap: var(--menu-gap, 1em);
 }
 
 /*Menu - mobile*/
@@ -98,9 +94,9 @@
         font-family: "DM Sans", sans-serif;
         font-size: 1.5em;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 600;
         cursor: pointer;
-        color: var(--dark-blue, #12232f);
+        color: var(--black, #000000);
     }
     
     .page__nav__hamburger-menu li a:hover {
@@ -113,7 +109,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 0.4em;
+        gap: .4em;
         z-index: 1100;
         cursor: pointer;
         width: 2em;
@@ -155,7 +151,7 @@
 
 /*Dropdown - menu*/
 
-.dropdown-menu, .dropdown-menu-hamburger {
+.dropdown-menu {
     display: none;
     position: absolute;
     background-color: var(--white, #ffffff);
@@ -168,6 +164,17 @@
     width: max-content;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.dropdown-menu-hamburger {
+    display: none;
+    margin-top: 1em;
+    margin-bottom: -1em;
+    height: fit-content;
+    padding: 1em;
+    padding-top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0;
 }
 
 .dropdown:hover > .dropdown-menu,
@@ -187,13 +194,70 @@
     padding-bottom: .75em;
 }
 
-/*Main*/
-
-.page__content {
-    border: 2px solid;
-}
+/*Main - index.html*/
 
 /*Section - page__offers*/
+
+.page__offers {
+    height: 91dvh;
+}
+
+.container--bg {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/back/bg-car.avif), url(../images/back/bg-car.webp), url(../images/original/bg-car.jpg);
+    background-attachment: scroll;
+    height: 70dvh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container--ad {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8em;
+    height: max-content;
+    width: max-content;
+    max-width: 35em;
+    color: var(--white, #ffffff);
+    background-color: var(--semi-transparent__black);
+}
+
+.container--ad__h2 {
+    --container--ad__line-height: 1.3em;
+    --padding: .5em;
+    padding-top: var(--padding);
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    text-align: center;
+    line-height: var(--container--ad__line-height);
+}
+
+.container--ad__h2 > span {
+    font-style: italic;
+    color: var(--red, #FF4605);
+}
+
+.container--ad__p {
+    margin-top: .3em;
+}
+
+.container--ad__p > strong > span {
+    font-weight: 400;
+    color: var(--red, #FF4605);
+}
+
+@media screen and (min-width: 768px){
+    .container--ad {
+        
+    }
+}
+
+.container--ad h2 {
+    margin: 0;
+}
 
 .card--certifikate__img, .card--pneu__img, .card--call__img {
     max-width: 22em;

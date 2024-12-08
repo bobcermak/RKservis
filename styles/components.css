@@ -1,1 +1,10 @@
-/*Button*/
+/*::Afters*/
+
+.exclude::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: .5em;
+}
+
+/*Buttons*/
