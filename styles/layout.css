@@ -187,8 +187,11 @@
     padding-bottom: 0;
 }
 
-.dropdown:hover > .dropdown-menu,
-.dropdown-hamburger:hover > .dropdown-menu-hamburger {
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-hamburger:active + .dropdown-menu-hamburger {
     display: block;
 }
 
