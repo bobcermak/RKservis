@@ -110,7 +110,6 @@
     }
     
     .page__nav__hamburger-menu li a:hover {
-        color: var(--red, #FF4605);
         transition: color 0.3s ease;
     }
     
@@ -187,11 +186,16 @@
     padding-bottom: 0;
 }
 
+.dropdown-hamburger {
+    border: 2px solid;
+    width: 100%;
+}
+
 .dropdown:hover > .dropdown-menu {
     display: block;
 }
 
-.dropdown-hamburger:active + .dropdown-menu-hamburger {
+.dropdown-hamburger:active > .dropdown-menu-hamburger {
     display: block;
 }
 
@@ -221,10 +225,8 @@
     background-image: url(../images/back/bg-car.avif), url(../images/back/bg-car.webp), url(../images/original/bg-car.jpg);
     background-attachment: fixed;
     height: 75dvh;
-    width: 100%;
     background-position: center center;
     background-size: cover;
-    opacity: 0;
 }
 
 .container--ad {
@@ -238,6 +240,12 @@
     color: var(--white, #ffffff);
     background-color: var(--semi-transparent__black);
     opacity: 0;
+}
+
+@media screen and (max-width: 300px){
+    .container--ad {
+        margin-top: 6em;
+    }
 }
 
 .container--ad__h2 {
@@ -287,13 +295,9 @@
         flex-basis: 30%;
     }
 }
-  
+
 /*Delay*/
 
 .container--ad.animate, .cards__1.animate, .cards__2.animate, .cards__3.animate {
     animation: slide-up .5s ease-in-out forwards;
-}
-
-.container--bg {
-    animation: show-up .6s ease-in-out forwards;
 }

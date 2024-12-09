@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let lastScrollY = window.scrollY;
     const header = document.querySelector('.page__header');
-
     window.addEventListener('scroll', function() {
         if (window.scrollY < lastScrollY) {
             header.classList.remove('page__header-hidden');
@@ -24,9 +23,12 @@ function toggleMenu() {
     hamburgerMenu.style.right = hamburgerMenu.style.right === '0px' ? '-100%' : '0';
     fixedIcon.classList.toggle('active');
 }
-function closeMenuOnClick() {
+function closeMenuOnClick(event) {
     const hamburgerMenu = document.querySelector('.page__nav__hamburger-menu');
     const fixedIcon = document.querySelector('.page_nav__hamburger.page__nav__close-icon');
+    if (event.target.closest('.dropdown-hamburger')) {
+        return;
+    }
     hamburgerMenu.style.right = '-100%';
     fixedIcon.classList.remove('active');
 }
@@ -52,10 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
       { element: document.querySelector(".cards__2"), delay: 1100 },
       { element: document.querySelector(".cards__3"), delay: 1300 }
     ];
-  
     animations.forEach(({ element, delay }) => {
       setTimeout(() => {
         if (element) element.classList.add("animate");
       }, delay);
     });
-  });
+});
