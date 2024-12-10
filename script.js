@@ -45,14 +45,43 @@ headerLinks.forEach(link => {
     }
 });
 
+//Dropdown
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownTrigger = document.querySelector(".dropdown-hamburger > a");
+    const dropdownMenu = document.querySelector(".dropdown-menu-hamburger");
+    const dropdownHamburger = document.querySelector(".dropdown-hamburger");
+    function toggleDropdown(event) {
+        event.preventDefault()
+        const isVisible = dropdownMenu.classList.contains("open");
+        dropdownMenu.classList.toggle("open", !isVisible);
+        dropdownHamburger.classList.toggle("active", !isVisible);
+    }
+    function closeDropdownOnClickOutside(event) {
+        if (!event.target.closest(".dropdown-hamburger")) {
+            dropdownMenu.classList.remove("open");
+            dropdownHamburger.classList.remove("active");
+        }
+    }
+    dropdownTrigger.addEventListener("click", toggleDropdown);
+    document.addEventListener("click", closeDropdownOnClickOutside);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownHamburger = document.querySelector(".dropdown-hamburger");
+    const contactMenuItem = document.querySelector("li.contact");
+    dropdownHamburger.addEventListener("click", function () {
+        contactMenuItem.classList.toggle("active-contact");
+    });
+});
+
 //Animations
 
 document.addEventListener("DOMContentLoaded", () => {
     const animations = [
-      { element: document.querySelector(".container--ad"), delay: 600 },
-      { element: document.querySelector(".cards__1"), delay: 900 },
-      { element: document.querySelector(".cards__2"), delay: 1100 },
-      { element: document.querySelector(".cards__3"), delay: 1300 }
+      { element: document.querySelector(".container--ad"), delay: 400 },
+      { element: document.querySelector(".cards__1"), delay: 700 },
+      { element: document.querySelector(".cards__2"), delay: 900 },
+      { element: document.querySelector(".cards__3"), delay: 1100 }
     ];
     animations.forEach(({ element, delay }) => {
       setTimeout(() => {
