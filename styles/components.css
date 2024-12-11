@@ -1,10 +1,15 @@
 /*Icons*/
 
-.exclude::after {
+.arrow::after {
   content: "\f0d7";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  margin-left: .5em;
+  display: inline-block;
+  margin-left: 0.25em;
+  transition: transform 0.3s ease;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
 }
 
 /*Animations*/
@@ -23,6 +28,15 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes  show-up {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }
 

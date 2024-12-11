@@ -74,6 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.querySelectorAll('.dropdown-hamburger').forEach(function(element) {
+    element.addEventListener('click', function() {
+        this.classList.toggle('open');
+    });
+});
+
+
 //Animations
 
 document.addEventListener("DOMContentLoaded", () => {
