@@ -186,8 +186,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0 1em;
 }
 
 .dropdown-menu-hamburger.open {
@@ -200,7 +199,7 @@
 .dropdown-hamburger {
     background-color: transparent;
     width: 100%;
-    transition: background-color 0.3s ease, margin-top 0.3s ease;
+    transition: background-color .3s ease, margin-top .3s ease;
     position: relative;
 }
 
@@ -293,9 +292,7 @@
 .container--ad__h2 {
     --container--ad__line-height: 1.3em;
     --padding: .5em;
-    padding-top: var(--padding);
-    padding-left: var(--padding);
-    padding-right: var(--padding);
+    padding: var(--padding) var(--padding);
     text-align: center;
     line-height: var(--container--ad__line-height);
 }
@@ -320,21 +317,69 @@
 
 .container--cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: var(--gap, 1em);
-    margin: -8em auto;
+    gap: 2em;
+    margin: -8em 1em;
 }
 
 .cards__1, .cards__2, .cards__3 {
-    padding: var(--gap, 1em);
-    max-width: 24em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    flex-basis: 33%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 4 / 3;
     opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 768px){
-    .cards__1, .cards__2, .cards__3{
-        flex-basis: 25%;
+.cards__1::after, .cards__2::after, .cards__3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    box-shadow: 0 6px 16px var(--gray-shadow, rgb(167, 165, 165));
+}
+
+.cards__1::after {
+    background-image: url(../images/back/certificate.avif), url(../images/back/certificate.webp), url(../images/original/certificate.jpg);
+}
+
+.cards__2::after {
+    background-image: url(../images/back/fast-pneuservis.avif), url(../images/back/fast-pneuservis.webp), url(../images/original/fast-pneuservis.jpg);
+}
+
+.cards__3::after {
+    background-image: url(../images/back/call-us.avif), url(../images/back/call-us.webp), url(../images/original/call-us.jpg);
+}
+
+.cards__1:hover::after, .cards__2:hover::after, .cards__3:hover::after {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .container--cards {
+        flex-direction: column;
+    }
+    .cards__1, .cards__2, .cards__3 {
+        max-width: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cards__1 {
+        margin-top: 3em;
     }
 }
 
@@ -343,3 +388,5 @@
 .container--ad.animate, .cards__1.animate, .cards__2.animate, .cards__3.animate {
     animation: slide-up .5s ease-in-out forwards;
 }
+
+/*Div - page__container--intro*/
