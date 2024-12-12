@@ -11,9 +11,8 @@
         --beige: #F8F7F7;
         --black: #000000;
         --white: #ffffff;
-        --gray-hover: rgb(240, 240, 240);
+        --gray: #F8F7F7;
         --semi-transparent__black: rgba(0, 0, 0, 0.5);
-        --gray-shadow: rgb(167, 165, 165);
         --gap: 1em;
         --header--fixed: 0;
     }

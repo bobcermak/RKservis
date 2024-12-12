@@ -40,4 +40,38 @@
   }
 }
 
+/*Container - ad*/
+
+.container--between-section {
+  display: block;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 3.5em;
+  background-color: var(--gray, #F8F7F7);
+}
+
+.container--between-section h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.container--between-section h2 span {
+  font-style: italic;
+  color: var(--red, #FF4605);
+}
+
+.container--between-section p {
+  margin: 0;
+  padding-top: .2em;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .container--between-section {
+    margin-top: 13em;
+    margin-bottom: 5em;
+  }
+}
+
 /*Buttons*/
