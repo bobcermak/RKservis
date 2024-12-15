@@ -409,6 +409,7 @@
     margin: 0 var(--margin-left);
     flex-basis: 90%;
     flex-grow: 1;
+    opacity: 0;
 }
 
 .header-about__img {
@@ -422,6 +423,7 @@
 .container--about {
     flex-basis: 90%;
     flex-grow: 1;
+    opacity: 0;
 }
 
 .container--about div {
@@ -446,6 +448,10 @@
     margin-right: var(--margin-left);
 }
 
+.footer-about {
+    opacity: 0;
+}
+
 .page__about__button {
     margin-left: var(--margin-left);
 }
@@ -461,6 +467,7 @@
     .header-about {
         flex-basis: 40%;
         flex-grow: 1;
+        margin: 0 0;
     }
 
     .header-about__img {
@@ -473,15 +480,10 @@
     }
 }
 
+/*Delay*/
+
+.header-about.animate, .container--about.animate, .footer-about.animate {
+    animation: slide-up .5s ease-in-out forwards;
+}
+
 /*Section - page__about*/
-
-.page__about {
-    opacity: 0; /* Sekce bude na začátku neviditelná */
-    transform: translateY(50px); /* Sekce je posunuta dolů */
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.page__about.animate {
-    opacity: 1; /* Sekce bude viditelná */
-    transform: translateY(0); /* Sekce se posune na své původní místo */
-}

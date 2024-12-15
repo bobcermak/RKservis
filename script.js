@@ -84,28 +84,41 @@ document.querySelectorAll('.dropdown-hamburger').forEach(function(element) {
 //Animations
 
 document.addEventListener("DOMContentLoaded", () => {
-    const animations = [
+    const animationoffers = [
       { element: document.querySelector(".container--ad"), delay: 400 },
       { element: document.querySelector(".cards__1"), delay: 700 },
       { element: document.querySelector(".cards__2"), delay: 900 },
       { element: document.querySelector(".cards__3"), delay: 1100 }
     ];
-    animations.forEach(({ element, delay }) => {
+    animationoffers.forEach(({ element, delay }) => {
       setTimeout(() => {
         if (element) element.classList.add("animate");
       }, delay);
     });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: .9 });
-    const section = document.querySelector('.page__about');
-    observer.observe(section);
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const animationAbout = [
+                        { element: document.querySelector(".header-about"), delay: 200 },
+                        { element: document.querySelector(".container--about"), delay: 400 },
+                        { element: document.querySelector(".footer-about"), delay: 600 },
+                    ];
+                    animationAbout.forEach(({ element, delay }) => {
+                        setTimeout(() => {
+                            if (element) element.classList.add("animate");
+                        }, delay);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: .6 }
+    );
+    const section = document.querySelector(".page__about");
+    if (section) {
+        observer.observe(section);
+    }
+})
