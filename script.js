@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 1 });
+    }, { threshold: .9 });
     const section = document.querySelector('.page__about');
     observer.observe(section);
 });
