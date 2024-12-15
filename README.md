@@ -1,4 +1,4 @@
-# RKservis
+# RKservis Jičín - STK, pneu, opravy, olej
 [Náhled webu](https://bobcermak.github.io/rkservis/)
 
 ## Licence
