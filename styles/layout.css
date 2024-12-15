@@ -78,7 +78,7 @@
 
 .page__nav__menu {
     display: flex;
-    gap: var(--gap, 1em);
+    gap: var(--gap);
 }
 
 /*Menu - mobile*/
@@ -105,7 +105,7 @@
     }
     
     .page__nav__hamburger-menu li a {
-        margin: var(--gap, 1em) 0;
+        margin: var(--gap) 0;
         font-family: "DM Sans", sans-serif;
         font-size: 1.5em;
         text-decoration: none;
@@ -279,7 +279,7 @@
     margin-top: 12em;
     height: max-content;
     width: max-content;
-    max-width: 35em;
+    max-width: 560px;
     color: var(--white, #ffffff);
     background-color: var(--semi-transparent__black);
     opacity: 0;
@@ -310,7 +310,6 @@
 
 .container--ad__p > strong > span {
     font-weight: 400;
-    color: var(--red, #FF4605);
 }
 
 .container--ad h2 {
@@ -318,9 +317,10 @@
 }
 
 .container--cards {
+    --gap: 2em;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: var(--gap);
     margin: -8em 1em;
 }
 
@@ -335,7 +335,7 @@
     height: auto;
     aspect-ratio: 4 / 3;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .cards__1::after, .cards__2::after, .cards__3::after {
@@ -348,7 +348,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 0.5s all;
+    transition: .5s all;
     box-shadow: 0 6px 30px rgb(168, 168, 168);
 }
 
@@ -397,3 +397,91 @@
 }
 
 /*Div - page__container--intro*/
+
+.page__about {
+    display: flex;
+    flex-direction: column;
+    --margin-left: .5em;
+    font-size: 1.0625em;
+}
+
+.header-about {
+    margin: 0 var(--margin-left);
+    flex-basis: 90%;
+    flex-grow: 1;
+}
+
+.header-about__img {
+    height: 300px;
+}
+
+.header-about--main-p span {
+    color: var(--red, #FF4605);
+}
+
+.container--about {
+    flex-basis: 90%;
+    flex-grow: 1;
+}
+
+.container--about div {
+    display: flex;
+    margin: 1.5em var(--margin-left);
+    gap: 1.5em;
+    flex-direction: column;
+}
+
+.check--about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0;
+}
+
+.check--about li {
+    display: block;
+}
+
+.check--about li::before {
+    margin-right: var(--margin-left);
+}
+
+.page__about__button {
+    margin-left: var(--margin-left);
+}
+
+@media screen and (min-width: 1280px) {
+    .page__about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.5em;
+    }
+
+    .header-about {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    .header-about__img {
+        height: 525px;
+    }
+
+    .container--about {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+}
+
+/*Section - page__about*/
+
+.page__about {
+    opacity: 0; /* Sekce bude na začátku neviditelná */
+    transform: translateY(50px); /* Sekce je posunuta dolů */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.page__about.animate {
+    opacity: 1; /* Sekce bude viditelná */
+    transform: translateY(0); /* Sekce se posune na své původní místo */
+}

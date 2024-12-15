@@ -12,6 +12,17 @@
   vertical-align: middle;
 }
 
+.pipe::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.75em;
+  padding: .28em;
+  border-radius: 50%;
+  color: var(--white, #F8F7F7);
+  background-color: var(--red, #FF4605);
+}
+
 /*Animations*/
 
 @keyframes slide-up {
@@ -51,27 +62,37 @@
   background-color: var(--gray, #F8F7F7);
 }
 
-.container--between-section h2 {
-  margin: 0;
-  font-size: 2em;
-}
-
 .container--between-section h2 span {
   font-style: italic;
-  color: var(--red, #FF4605);
 }
 
 .container--between-section p {
-  margin: 0;
   padding-top: .2em;
-  font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
-  .container--between-section {
+  .container--between-section--fix {
     margin-top: 13em;
     margin-bottom: 5em;
   }
 }
 
 /*Buttons*/
+
+.button {
+    display: inline-block;
+    background-color: var(--red, #FF4605);
+    padding: 1em 1.5em;
+    color: var(--white, #F8F7F7);
+    text-decoration: none;
+    border-radius: .65em;
+    font-weight: 900;
+    border: 2px solid transparent;
+    transition: .5s all;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid var(--red, #FF4605);
+  color: var(--red, #FF4605);
+}

@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="no-referrer">
     <meta name="description" content="RKservis v Jičíně nabízí komplexní opravy aut, pneuservis, přípravu na STK, výměnu oleje a další profesionální služby. Navštivte nás a postarejte se o své auto!">
     <meta name="keywords" content="RKservis, opravy aut, autoservis Jičín, pneuservis, příprava na STK, výměna oleje, opravy motorů, diagnostika vozidel, opravy karoserie, Jičín, opravy vozidel, autoopravna">
     <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
@@ -51,8 +56,8 @@
         <section class="page__offers">
             <div class="container--bg">
                 <div class="container--ad">
-                    <h2 class="max--size container--ad__h2">Opravy Vozů Všech Značek Bez Čekání<span>!</span></h2>
-                    <p class="mid--size container--ad__p"><strong><span>+420</span> 607 204 866</strong></p>
+                    <h2 class="max--size container--ad__h2">Opravy Vozů Všech Značek Bez Čekání<span class="mark--red">!</span></h2>
+                    <p class="mid--size container--ad__p"><strong><span class="mark--red">+420</span> 607 204 866</strong></p>
                 </div>
             </div>
             <div class="container--cards">
@@ -61,209 +66,202 @@
                 <a href="#" class="container--fix cards__3"></a>
             </div>
         </section>
-        <div class="container--between-section">
-            <h2>Vítejte V RKservise<span>!</span></h2>
-            <p>Najdeš nás u Šibeňáku v Jičíně</p>
+        <div class="container--between-section container--between-section--fix">
+            <h2 class="half-max--size container--fix">Vítejte V RKservise<span class="mark--red">!</span></h2>
+            <p class="mid--size container--fix">Najdeš nás u Šibeňáku v Jičíně</p>
         </div>
         <section class="page__about">
-            <article>
-                <header>
-                    <picture>
-                        <source srcset="./images/back/car-about.avif" type="image/avif">
-                        <source srcset="./images/back/car-about.webp" type="image/webp">
-                        <img class="img-responsive" src="./images/original/car-about.jpeg" loading="lazy" width="600px" height="412px" alt="RKservis - Oprava Vozů">
-                    </picture>
-                </header>
+            <header class="container--fix header-about">
+                <picture>
+                    <source srcset="./images/back/car-about.avif" type="image/avif">
+                    <source srcset="./images/back/car-about.webp" type="image/webp">
+                    <img class="img-responsive header-about__img" src="./images/original/car-about.jpeg" loading="lazy" width="600px" height="412px" alt="RKservis - Oprava Vozů">
+                </picture>
+            </header>
+            <div class="container--about">
                 <div>
-                    <p><b>Něco Málo O Nás<span>!</span></b></p>
-                    <p>V Jičíně opravujeme auta už roky a jsme tu jako doma!</p>
-                    <p>S autem pomůžeme ať už potřebujete připravit vůz na kontrolu STK, přezout pneu, opravit poruchy, nebo jen vyměnit olej.</p>
-                    <ul>
-                        <li>Záruka vysoké kvality</li> <!--::before-->
-                        <li>Tradice</li> <!--::before-->
-                        <li>Vstřícný přístup k zákazníkům</li> <!--::before-->
+                    <p class="header-about--main-p container--fix half-max--size"><b>Něco Málo O Nás <span>:</span></b></p>
+                    <p class="container--fix">V Jičíně opravujeme auta už roky a jsme tu jako doma!</p>
+                    <p class="container--fix">S autem pomůžeme ať už potřebujete připravit vůz na kontrolu STK, přezout pneu, opravit poruchy, nebo jen vyměnit olej.</p>
+                    <ul class="check--about">
+                        <li class="
+                        pipe">Záruka vysoké kvality</li> <!--::before-->
+                        <li class="
+                        pipe">Tradice</li> <!--::before-->
+                        <li class="
+                        pipe">Vstřícný přístup k zákazníkům</li> <!--::before-->
                     </ul>
                 </div>
                 <footer>
-                    <a class="button" href="#">Zobrazit Více</a>
+                    <a class="button page__about__button" href="#">Zobrazit Více</a>
                 </footer>
-            </article>
+            </div>
         </section>
         <div class="container--between-section">
-            <p><b>Máš Nějaké Otázky<span>?</span></b></p>
-            <p>Zavolej Nám Na <strong>+420 607 204 866</strong></p>
+            <p class="half-max--size container--fix">Máš Nějaké Otázky<span class="mark--red">?</span></p>
+            <p class="mid--size container--fix">Zavolej Nám Na <strong>+420 607 204 866</strong></p>
         </div>
         <section class="page__skills">
-            <article>
-                <header>
-                    <h3>AUTA ZNÁME</h3>
-                    <p><b>Od Brzdy Až Po Výfuk</b></p>
-                </header>
-                <div>
-                    <a class="button" href="#">Zavolej Nám</a>
-                </div>
-                <footer>
-                    <article>
-                        <figure>
-                            <picture>
-                                <source srcset="./images/back/happy-customer.avif" type="image/avif">
-                                <source srcset="./images/back/happy-customer.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/happy-customer.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Komunikace Se Zákazníkem">
-                            </picture>
-                        </figure>
-                        <p><b>Autodiagnostika</b></p>
-                    </article>
-                    <article>
-                        <figure>
-                            <picture>
-                                <source srcset="./images/back/meeting.avif" type="image/avif">
-                                <source srcset="./images/back/meeting.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/meeting.jpeg" loading="lazy" width="768px" height="512px" alt="RKservis - Oprava A Servis">
-                            </picture>
-                        </figure>
-                        <p><b>Oprava a servis</b></p>
-                    </article>
-                    <article>
-                        <figure>
-                            <picture>
-                                <source srcset="./images/back/testing-drive.avif" type="image/avif">
-                                <source srcset="./images/back/testing-drive.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/testing-drive.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Příprava Na Kontrolu STK">
-                            </picture>
-                        </figure>
-                        <p><b>Příprava na kontrolu STK</b></p>
-                    </article>
-                    <article>
-                        <figure>
-                            <picture>
-                                <source srcset="./images/back/pneumatik-girl.avif" type="image/avif">
-                                <source srcset="./images/back/pneumatik-girl.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/pneumatik-girl.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Přezutí Pneumatik">
-                            </picture>
-                        </figure>
-                        <p><b>Přezutí pneumatik</b></p>
-                    </article>
-                    <article>
-                        <figure>
-                            <picture>
-                                <source srcset="./images/back/fixing-white-car.avif" type="image/avif">
-                                <source srcset="./images/back/fixing-white-car.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/fixing-white-car.jpeg" loading="lazy" width="600px" height="400px" alt="RKservis - Oprava Karoserie">
-                            </picture>
-                        </figure>
-                        <p><b>Oprava Karoserie</b></p>
-                    </article>
-                    <article>
-                        <figure>
-                            <picture>
-                                <source srcset="./images/back/fixing-car-engine.avif" type="image/avif">
-                                <source srcset="./images/back/fixing-car-engine.webp" type="image/webp">
-                                <img class="img-responsive" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Rozvody motoru">
-                            </picture>
-                        </figure>
-                        <p><b>Rozvody motoru</b></p>
-                    </article>
-                </footer>
-            </article>
+            <header>
+                <h3>AUTA ZNÁME</h3>
+                <p><b>Od Brzdy Až Po Výfuk</b></p>
+            </header>
+            <div>
+                <a class="button" href="#">Zavolej Nám</a>
+            </div>
+            <footer>
+                <article>
+                    <figure>
+                        <picture>
+                            <source srcset="./images/back/happy-customer.avif" type="image/avif">
+                            <source srcset="./images/back/happy-customer.webp" type="image/webp">
+                            <img class="img-responsive" src="./images/original/happy-customer.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Komunikace Se Zákazníkem">
+                        </picture>
+                    </figure>
+                    <p><b>Autodiagnostika</b></p>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <source srcset="./images/back/meeting.avif" type="image/avif">
+                            <source srcset="./images/back/meeting.webp" type="image/webp">
+                            <img class="img-responsive" src="./images/original/meeting.jpeg" loading="lazy" width="768px" height="512px" alt="RKservis - Oprava A Servis">
+                        </picture>
+                    </figure>
+                    <p><b>Oprava a servis</b></p>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <source srcset="./images/back/testing-drive.avif" type="image/avif">
+                            <source srcset="./images/back/testing-drive.webp" type="image/webp">
+                            <img class="img-responsive" src="./images/original/testing-drive.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Příprava Na Kontrolu STK">
+                        </picture>
+                    </figure>
+                    <p><b>Příprava na kontrolu STK</b></p>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <source srcset="./images/back/pneumatik-girl.avif" type="image/avif">
+                            <source srcset="./images/back/pneumatik-girl.webp" type="image/webp">
+                            <img class="img-responsive" src="./images/original/pneumatik-girl.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Přezutí Pneumatik">
+                        </picture>
+                    </figure>
+                    <p><b>Přezutí pneumatik</b></p>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <source srcset="./images/back/fixing-white-car.avif" type="image/avif">
+                            <source srcset="./images/back/fixing-white-car.webp" type="image/webp">
+                            <img class="img-responsive" src="./images/original/fixing-white-car.jpeg" loading="lazy" width="600px" height="400px" alt="RKservis - Oprava Karoserie">
+                        </picture>
+                    </figure>
+                    <p><b>Oprava Karoserie</b></p>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <source srcset="./images/back/fixing-car-engine.avif" type="image/avif">
+                            <source srcset="./images/back/fixing-car-engine.webp" type="image/webp">
+                            <img class="img-responsive" src="./images/original/fixing-car-engine.jpeg" loading="lazy" width="768px" height="511px" alt="RKservis - Rozvody motoru">
+                        </picture>
+                    </figure>
+                    <p><b>Rozvody motoru</b></p>
+                </article>
+            </footer>
         </section>
         <section class="page__reviews">
-            <article>
-                <header>
-                    <p>,,</p>
-                </header>
-                <div>
-                    <h2>RECENZE</h2>
-                    <p><b>Co Se O Nás Povídá<span>?</span></b></p>
-                </div>
-                <footer>
-                    <a href="#">
-                        <article>
-                            <header>
-                                <a href="#">
-                                    <picture>
-                                        <source srcset="./images/back/eva-kocirova.avif" type="image/avif">
-                                        <source srcset="./images/back/eva-kocirova.webp" type="image/webp">
-                                        <img class="img-responsive" src="./images/original/eva-kocirova.png" loading="lazy" width="60px" height="60px" alt="RKservis - Eva Kočířová">
-                                    </picture>
-                                </a>
-                                <figure>
-                                    <picture>
-                                        <source srcset="./images/back/stars-transparent.avif" type="image/avif">
-                                        <source srcset="../images/back/stars-transparent.webp" type="image/webp">
-                                        <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
-                                    </picture>
-                                </figure>
-                            </header>
-                            <div>
-                                <p>Velice ochotný a vstřícný přístup, neskutečné znalosti a zkušenosti v oboru. Oprava na počkání i s odtahem z nedaleké benzinky a dovozem náhradního dílu, vše během několika hodin. Mockrát děkujeme za pomoc a opravu 🙏🏻</p>
-                            </div>
-                            <footer>
-                                <p><b>Eva Kočířová</b></p>
-                                <p>Spokojený Zákazník</p>
-                            </footer>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article>
-                            <header>
-                                <a href="#">
-                                    <picture>
-                                        <source srcset="./images/back/daniel.avif" type="image/avif">
-                                        <source srcset="./images/back/daniel.webp" type="image/webp">
-                                        <img class="img-responsive" src="./images/original/daniel.png" loading="lazy" width="60px" height="60px" alt="RKservis - Daniel">
-                                    </picture>
-                                </a>
-                                <figure>
-                                    <picture>
-                                        <source srcset="./images/back/stars-transparent.avif" type="image/avif">
-                                        <source srcset="../images/back/stars-transparent.webp" type="image/webp">
-                                        <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
-                                    </picture>
-                                </figure>
-                            </header>
-                            <div>
-                                <p>Maximální spokojenost s rychlostí oprav, kvalitou oprav, cenou i férovým přístupem, víc k tomu není třeba. Kdo jednou vyzkouší, servis už rozhodně nemění.. 😉</p>
-                            </div>
-                            <footer>
-                                <p><b>D a n i e l</b></p>
-                                <p>Spokojený Zákazník</p>
-                            </footer>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article>
-                            <header>
-                                <figure>
-                                    <picture>
-                                        <source srcset="./images/back/petr-kousal.avif" type="image/avif">
-                                        <source srcset="./images/back/petr-kousal.webp" type="image/webp">
-                                        <img class="img-responsive" src="./images/original/petr-kousal.png" loading="lazy" width="60px" height="60px" alt="RKservis - Petr Kousal">
-                                    </picture>
-                                </figure>
-                                <figure>
-                                    <picture>
-                                        <source srcset="./images/back/stars-transparent.avif" type="image/avif">
-                                        <source srcset="../images/back/stars-transparent.webp" type="image/webp">
-                                        <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
-                                    </picture>
-                                </figure>
-                            </header>
-                            <div>
-                                <p>Motorkáři v českém ráji mají v Panu Klabanovi a jeho RK-Servisu jistotu. Šikovný a velmi příjemný. Na motorkách i autech mu záleží. Takových lidí si zejména motorkáři váží...</p>
-                            </div>
-                            <footer>
-                                <p><b>Petr Kousal</b></p>
-                                <p>Spokojený Zákazník</p>
-                            </footer>
-                        </article>
-                    </a>
-                </footer>
-            </article>
+            <header>
+                <p>,,</p> <!--!!!-->
+            </header>
+            <div>
+                <h2>RECENZE</h2>
+                <p><b>Co Se O Nás Povídá<span>?</span></b></p>
+            </div>
+            <footer>
+                <a href="#">
+                    <header>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/eva-kocirova.avif" type="image/avif">
+                                <source srcset="./images/back/eva-kocirova.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/eva-kocirova.png" loading="lazy" width="60px" height="60px" alt="RKservis - Eva Kočířová">
+                            </picture>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/stars-transparent.avif" type="image/avif">
+                                <source srcset="../images/back/stars-transparent.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                            </picture>
+                        </figure>
+                    </header>
+                    <div>
+                        <p>Velice ochotný a vstřícný přístup, neskutečné znalosti a zkušenosti v oboru. Oprava na počkání i s odtahem z nedaleké benzinky a dovozem náhradního dílu, vše během několika hodin. Mockrát děkujeme za pomoc a opravu 🙏🏻</p>
+                    </div>
+                    <footer>
+                        <p><b>Eva Kočířová</b></p>
+                        <p>Spokojený Zákazník</p>
+                    </footer>
+                </a>
+                <a href="#">
+                    <header>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/daniel.avif" type="image/avif">
+                                <source srcset="./images/back/daniel.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/daniel.png" loading="lazy" width="60px" height="60px" alt="RKservis - Daniel">
+                            </picture>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/stars-transparent.avif" type="image/avif">
+                                <source srcset="../images/back/stars-transparent.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                            </picture>
+                        </figure>
+                    </header>
+                    <div>
+                        <p>Maximální spokojenost s rychlostí oprav, kvalitou oprav, cenou i férovým přístupem, víc k tomu není třeba. Kdo jednou vyzkouší, servis už rozhodně nemění.. 😉</p>
+                    </div>
+                    <footer>
+                        <p><b>D a n i e l</b></p>
+                        <p>Spokojený Zákazník</p>
+                    </footer>
+                </a>
+                <a href="#">
+                    <header>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/petr-kousal.avif" type="image/avif">
+                                <source srcset="./images/back/petr-kousal.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/petr-kousal.png" loading="lazy" width="60px" height="60px" alt="RKservis - Petr Kousal">
+                            </picture>
+                        </figure>
+                        <figure>
+                            <picture>
+                                <source srcset="./images/back/stars-transparent.avif" type="image/avif">
+                                <source srcset="../images/back/stars-transparent.webp" type="image/webp">
+                                <img class="img-responsive" src="./images/original/stars-transparent.png" loading="lazy" width="690px" height="362px" alt="Počet Hvězdiček">
+                            </picture>
+                        </figure>
+                    </header>
+                    <div>
+                        <p>Motorkáři v českém ráji mají v Panu Klabanovi a jeho RK-Servisu jistotu. Šikovný a velmi příjemný. Na motorkách i autech mu záleží. Takových lidí si zejména motorkáři váží...</p>
+                    </div>
+                    <footer>
+                        <p><b>Petr Kousal</b></p>
+                        <p>Spokojený Zákazník</p>
+                    </footer>
+                </a>                
+            </footer>
         </section>
     </main>
     <footer class="page__footer">
         <section class="container--between-section">
-            <i>#</i><!--Car-->
+            <i>#</i><!--Car--> <!--!!!-->
             <p><strong>+420 607 204 866</strong></p>
         </section>
         <section class="page__contact">
