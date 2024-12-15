@@ -70,10 +70,21 @@
   padding-top: .2em;
 }
 
+@media screen and (max-width: 1176px) {
+  .container--between-section--fix {
+    margin-top: 5em;
+  }
+}
+
+@media screen and (max-width: 1176px) and (min-width: 768px) {
+  .container--between-section--fix {
+    margin-top: 2em;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container--between-section--fix {
     margin-top: 13em;
-    margin-bottom: 5em;
   }
 }
 
