@@ -69,6 +69,10 @@
         font-size: 2.625em;
     }
 
+    .ultra-max--size {
+        font-size: 3em;
+    }
+
     .mark--red {
         color: var(--red, #FF4605);
     }
