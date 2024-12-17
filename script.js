@@ -97,28 +97,49 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
+    const animateElements = (elements) => {
+        elements.forEach(({ element, delay }) => {
+            if (element) {
+                setTimeout(() => {
+                    element.classList.add("animate");
+                }, delay);
+            }
+        });
+    };
+    const getThreshold = () => {
+        const width = window.innerWidth;
+        if (width <= 480) return .05;
+        else if (width <= 768) return .15;
+        else return .35;
+    };
+    const createObserver = (sectionSelector, animationData) => {
+        const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    const animationAbout = [
-                        { element: document.querySelector(".header-about"), delay: 200 },
-                        { element: document.querySelector(".container--about"), delay: 400 },
-                        { element: document.querySelector(".footer-about"), delay: 600 },
-                    ];
-                    animationAbout.forEach(({ element, delay }) => {
-                        setTimeout(() => {
-                            if (element) element.classList.add("animate");
-                        }, delay);
-                    });
+                    animateElements(animationData);
                     observer.unobserve(entry.target);
                 }
             });
-        },
-        { threshold: .6 }
-    );
-    const section = document.querySelector(".page__about");
-    if (section) {
-        observer.observe(section);
-    }
-})
+        }, { threshold: getThreshold() });
+        const section = document.querySelector(sectionSelector);
+        if (section) {
+            observer.observe(section);
+        }
+    };
+    const aboutAnimationData = [
+        { element: document.querySelector(".header-about"), delay: 200 },
+        { element: document.querySelector(".container--about"), delay: 400 },
+        { element: document.querySelector(".footer-about"), delay: 600 },
+    ];
+    createObserver(".page__about", aboutAnimationData);
+    const skillsAnimationData = [
+        { element: document.querySelector(".container--skills-header-main"), delay: 200 },
+        { element: document.querySelector(".footer-skills__c-1"), delay: 400 },
+        { element: document.querySelector(".footer-skills__c-2"), delay: 600 },
+        { element: document.querySelector(".footer-skills__c-3"), delay: 800 },
+        { element: document.querySelector(".footer-skills__c-4"), delay: 1000 },
+        { element: document.querySelector(".footer-skills__c-5"), delay: 1200 },
+        { element: document.querySelector(".footer-skills__c-6"), delay: 1400 },
+    ];
+    createObserver(".page__skills", skillsAnimationData);
+});

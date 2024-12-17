@@ -19,7 +19,7 @@
   font-size: 0.75em;
   padding: .3em .32em;
   border-radius: 50%;
-  color: var(--white, #F8F7F7);
+  color: var(--white, #ffffff);
   background-color: var(--red, #FF4605);
 }
 
@@ -115,6 +115,7 @@
   text-align: center;
   border-radius: .5em;
   box-shadow: 0 6px 30px rgb(168, 168, 168);
+  border: 1.5px solid var(--white, #ffffff);
   overflow: hidden;
 }
 
