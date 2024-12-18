@@ -141,7 +141,7 @@
     }
     
     .page_nav__hamburger.active .line:nth-child(1) {
-        transform: rotate(50deg) translateY(1em);
+        transform: rotate(47deg) translateY(1em);
     }
     
     .page_nav__hamburger.active .line:nth-child(2) {
@@ -149,7 +149,7 @@
     }
     
     .page_nav__hamburger.active .line:nth-child(3) {
-        transform: rotate(-51deg) translateY(-1em);
+        transform: rotate(-49deg) translateY(-1em);
     }
 
     .page__nav__menu {
@@ -568,4 +568,31 @@
 
 .container--skills-header-main.animate, .footer-skills__c-1.animate, .footer-skills__c-2.animate, .footer-skills__c-3.animate, .footer-skills__c-4.animate, .footer-skills__c-5.animate, .footer-skills__c-6.animate {
     animation: slide-up .5s ease-in-out forwards;
+}
+
+/*Section - page__reviews*/
+
+.page__reviews {
+    border: 2px solid;
+}
+
+.header-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    margin: 7em auto;
+    text-align: center;
+    font-size: .75em;
+    border: 2px solid;
+}
+
+.header-reviews::before {
+    content: "";
+    font-size: 15em;
+    width: .5em;
+    height: .5em;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 50%;
+    font-style: italic;
 }
