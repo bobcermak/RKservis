@@ -13,6 +13,7 @@
         --white: #ffffff;
         --gray: #F8F7F7;
         --semi-transparent__black: rgba(0, 0, 0, 0.5);
+        --shadow: rgb(168, 168, 168);
         --gap: 1em;
         --header--fixed: 0;
     }
@@ -35,6 +36,8 @@
 
     /*Presets*/
 
+    /*Img - responsive*/
+
     .img-responsive {
         display: block;
         width: 100%;
@@ -44,6 +47,8 @@
         padding: 0;
     }
 
+    /*Margin - fix*/
+
     .container--fix {
         margin: 0;
     }
@@ -51,6 +56,8 @@
     .iframe--fix {
         max-width: 100%;
     }
+
+    /*Font - sizes*/
 
     .p--size {
         font-size: 1em;
@@ -73,7 +80,43 @@
         font-size: 3em;
     }
 
+    /*Colors*/
+
     .mark--red {
         color: var(--red, #FF4605);
+    }
+
+    .border--red {
+        border: 1px solid var(--red, #FF4605);
+    }
+
+    /*Margins*/
+
+    /*+*/
+
+    .margin-top--plus0-5 {
+        margin-top: .5em;
+    }
+
+    .margin-top--plus1 {
+        margin-top: 1em;
+    }
+
+    .margin-top--plus1-75 {
+        margin-top: 1.75em;
+    }
+
+    .margin-top--plus3 {
+        margin-top: 3em;
+    }
+
+    /*-*/
+
+    .margin-top--negative1 {
+        margin-top: -1em;
+    }
+
+    .margin-top--negative2 {
+        margin-top: -2em;
     }
 }
