@@ -37,12 +37,20 @@
 
     /*Presets*/
 
-    /*Img - responsive*/
+    /*Img - responsive - Iframe*/
 
     .img-responsive {
         display: block;
         width: 100%;
         height: auto;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .iframe {
+        display: block;
+        height: 95%;
         object-fit: cover;
         margin: 0;
         padding: 0;

@@ -23,9 +23,11 @@
   background-color: var(--red, #FF4605);
 }
 
-.circle:before {
+.circle::before {
   content: "";
-  font-size: 15em;
+  font-family: "Font Awesome 6 Free";
+  display: block;
+  font-size: 180px;
   width: .5em;
   height: .5em;
   margin: 0 auto;

@@ -640,3 +640,39 @@
 }
 
 /*Footer*/
+
+.container--between-footer p {
+    margin: .5em 0;
+}
+
+.page__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 1170px;
+    margin: 0 .5em;
+}
+
+.contact__cantact-data {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.contact__cantact-data > div {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+
+.mobile-phone p {
+    font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+    .page__contact {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
