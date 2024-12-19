@@ -34,10 +34,6 @@
   border-radius: 50%;
 }
 
-.circle--footer:before {
-  /*fix*/
-}
-
 /*Animations*/
 
 @keyframes slide-up {
