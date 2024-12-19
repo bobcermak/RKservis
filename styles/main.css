@@ -14,6 +14,7 @@
         --gray: #F8F7F7;
         --semi-transparent__black: rgba(0, 0, 0, 0.5);
         --shadow: rgb(168, 168, 168);
+        --cards-bigger-hover: rgb(230, 230, 230);
         --gap: 1em;
         --header--fixed: 0;
     }

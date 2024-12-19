@@ -142,4 +142,12 @@ document.addEventListener("DOMContentLoaded", function () {
         { element: document.querySelector(".footer-skills__c-6"), delay: 1400 },
     ];
     createObserver(".page__skills", skillsAnimationData);
+    const reviewsAnimationData = [
+        { element: document.querySelector(".header-reviews"), delay: 200 },
+        { element: document.querySelector(".container--reviews"), delay: 400 },
+        { element: document.querySelector(".footer-reviews__c-1"), delay: 600 },
+        { element: document.querySelector(".footer-reviews__c-2"), delay: 800 },
+        { element: document.querySelector(".footer-reviews__c-3"), delay: 1000 },
+    ];
+    createObserver(".page__reviews", reviewsAnimationData);
 });

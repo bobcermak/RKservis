@@ -141,7 +141,7 @@
     }
     
     .page_nav__hamburger.active .line:nth-child(1) {
-        transform: rotate(47deg) translateY(1em);
+        transform: rotate(45deg) translateY(.9em);
     }
     
     .page_nav__hamburger.active .line:nth-child(2) {
@@ -149,7 +149,7 @@
     }
     
     .page_nav__hamburger.active .line:nth-child(3) {
-        transform: rotate(-49deg) translateY(-1em);
+        transform: rotate(-45deg) translateY(-.92em);
     }
 
     .page__nav__menu {
@@ -627,6 +627,16 @@
     .footer-reviews a {
         flex-basis: 30%;
     }
+}
+
+.header-reviews, .container--reviews, .footer-reviews__c-1, .footer-reviews__c-2, .footer-reviews__c-3 {
+    opacity: 0;
+}
+
+/*Delay*/
+
+.header-reviews.animate, .container--reviews.animate, .footer-reviews__c-1.animate, .footer-reviews__c-2.animate, .footer-reviews__c-3.animate {
+    animation: slide-up .5s ease-in-out forwards;
 }
 
 /*Footer*/

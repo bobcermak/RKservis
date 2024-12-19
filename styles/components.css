@@ -186,5 +186,5 @@
 }
 
 .card--bigger:hover {
-  transform: scale(1.05);
+  background-color: var(--cards-bigger-hover, rgb(230, 230, 230));
 }
