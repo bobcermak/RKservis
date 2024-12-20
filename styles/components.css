@@ -46,7 +46,7 @@
 
 .whatsapp::before {
   content: "\f232";
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Brands";
   font-weight: 900;
   padding: .3em .32em;
   color: var(--white, #ffffff);
@@ -54,7 +54,7 @@
 
 .chrome::before {
   content: "\f268";
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 5 Brands";
   font-weight: 900;
   padding: .3em .32em;
   color: var(--white, #ffffff);

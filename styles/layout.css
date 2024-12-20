@@ -692,6 +692,11 @@
 .page__flap a {
     text-decoration: none;
     color: var(--white, #ffffff);
+    transition: .5s all;
+}
+
+.page__flap a:hover {
+    color: var(--footer-hover, rgb(208, 208, 208));
 }
 
 @media screen and (min-width: 768px) {
