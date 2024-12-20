@@ -676,3 +676,27 @@
         margin: 0 auto;
     }
 }
+
+.page__flap {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    gap: 1em;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: -4em;
+    background-color: var(--red, #FF4605);
+    color: var(--white, #ffffff);
+}
+
+.page__flap a {
+    text-decoration: none;
+    color: var(--white, #ffffff);
+}
+
+@media screen and (min-width: 768px) {
+    .page__flap {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

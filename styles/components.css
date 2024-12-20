@@ -36,6 +36,30 @@
   border-radius: 50%;
 }
 
+.location::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: .3em .32em;
+  color: var(--white, #ffffff);
+}
+
+.whatsapp::before {
+  content: "\f232";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: .3em .32em;
+  color: var(--white, #ffffff);
+}
+
+.chrome::before {
+  content: "\f268";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: .3em .32em;
+  color: var(--white, #ffffff);
+}
+
 /*Animations*/
 
 @keyframes slide-up {
