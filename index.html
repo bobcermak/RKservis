@@ -16,9 +16,9 @@
     <title>RKservis Jičín - STK, pneu, opravy, olej</title>
 </head>
 <body class="page">
-    <header class="page__header">
+    <header class="page__header" id="header">
         <nav class="page__nav">
-            <h1 class="page__nav-h1 p--size"><span>RK</span>servis</h1>
+            <h1 class="page__nav-h1 p--size"><a href="#header"><span>RK</span>servis</a></h1>
             <!--Mobile-->
             <div class="page_nav__hamburger page__nav__close-icon" onclick="toggleMenu()">
                 <div class="line"></div>
@@ -26,29 +26,29 @@
                 <div class="line"></div>
             </div>
             <menu class="page__nav__hamburger-menu">
-                <li><a class="activeLi" href="#">Úvod</a></li>
-                <li><a href="#">Lokace</a></li>
+                <li><a class="activeLi" href="#header">Úvod</a></li>
+                <li><a href="./indexes/location.html">Lokace</a></li>
                 <li class="dropdown-hamburger">
                     <a class="exclude arrow" href="#">Naše Služby</a>
                     <ul class="dropdown-menu-hamburger">
-                        <li><a href="#">Autoservis</a></li>
-                        <li><a href="#">Pneuservis</a></li>
+                        <li><a href="./indexes/autoservis.html">Autoservis</a></li>
+                        <li><a href="./indexes/pneuservis.html">Pneuservis</a></li>
                     </ul>
                 </li>
-                <li class="contact"><a href="#">Kontaktuj nás</a></li>
+                <li class="contact"><a href="./indexes/contact.html">Kontaktuj nás</a></li>
             </menu>
             <!--Desktop-->
             <menu class="page__nav__menu">
-                <li><a class="activeLi" href="#">Úvod</a></li>
-                <li><a href="#">Lokace</a></li>
+                <li><a class="activeLi" href="index.html">Úvod</a></li>
+                <li><a href="./indexes/location.html">Lokace</a></li>
                 <li class="dropdown">
                     <a class="exclude arrow" href="#">Naše Služby</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Autoservis</a></li>
-                        <li><a href="#">Pneuservis</a></li>
+                        <li><a href="./indexes/autoservis.html">Autoservis</a></li>
+                        <li><a href="./indexes/pneuservis.html">Pneuservis</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Kontaktuj nás</a></li>
+                <li><a href="./indexes/contact.html">Kontaktuj nás</a></li>
             </menu>
         </nav>
     </header>
@@ -93,7 +93,7 @@
                     </ul>
                 </div>
                 <footer class="footer-about">
-                    <a class="button page__about__button" href="#">Zobrazit Více</a>
+                    <a class="button page__about__button" href="./indexes/location.html">Zobrazit Více</a>
                 </footer>
             </div>
         </section>
@@ -108,7 +108,7 @@
                     <p class="ultra-max--size container--fix"><b>Od Brzdy Až Po Výfuk</b></p>
                 </header>
                 <div class="container--skills">
-                    <a class="button container--skills__button" href="#">Zavolej Nám</a>
+                    <a class="button container--skills__button" href="#contact-us">Zavolej Nám</a>
                 </div>
             </div>
             <footer class="footer-skills">
@@ -243,7 +243,7 @@
         <section class="container--between-section container--between-footer circle">
             <p class="container--fix half-max--size"><strong>+420 607 204 866</strong></p>
         </section>
-        <section class="page__contact">
+        <section class="page__contact" id="contact-us">
             <div class="contact__cantact-data">
                 <h3 class="container--fix mid--size">Kontakt<span class="mark--red">:</span></h3>
                 <div class="adress">
@@ -265,9 +265,14 @@
             </div>
         </section>
         <section class="page__flap">
-            <p class="container--fix location"><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/%C5%A0ibe%C5%88%C3%A1k,+506+01+Ji%C4%8D%C3%ADn+1/@50.4367497,15.3684487,17z/data=!3m1!4b1!4m6!3m5!1s0x470ea38eafd5e803:0x3eb8891b17d30b39!8m2!3d50.4367497!4d15.3710236!16s%2Fg%2F119vk0w_q?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D">Šibeňák, 506 01 Jičín 1</a></p> <!--::before-->
-            <p class="container--fix whatsapp"><strong>Tel.:</strong> <a href="tel:+420607204866">607 204 866</a></p> <!--::before-->
-            <p class="container--fix chrome"><strong>Web:</strong> <a href="https://www.domena.cz" target="_blank">www.domena.cz</a></p> <!--::before-->
+            <div class="inf--footer">
+                <p class="container--fix location"><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/%C5%A0ibe%C5%88%C3%A1k,+506+01+Ji%C4%8D%C3%ADn+1/@50.4367497,15.3684487,17z/data=!3m1!4b1!4m6!3m5!1s0x470ea38eafd5e803:0x3eb8891b17d30b39!8m2!3d50.4367497!4d15.3710236!16s%2Fg%2F119vk0w_q?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D">Šibeňák, 506 01 Jičín 1</a></p> <!--::before-->
+                <p class="container--fix whatsapp"><strong>Tel.:</strong> <a href="tel:+420607204866">607 204 866</a></p> <!--::before-->
+                <p class="container--fix chrome"><strong>Web:</strong> <a href="https://www.domena.cz" target="_blank">www.domena.cz</a></p> <!--::before-->
+            </div>
+            <div class="copyright">
+                <p class="container--fix">&copy; 2023 RK Servis. All rights reserved | Vytvořil <a href="#">BobCermak</a></p></p>
+            </div>
         </section>
     </footer>
     <script src="script.js"></script>

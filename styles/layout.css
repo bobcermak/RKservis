@@ -25,6 +25,11 @@
     height: 100%;
 }
 
+.page__nav a {
+    text-decoration: none;
+    color: var(--black, #000000);
+}
+
 .page__nav-h1 {
     display: inline-block;
     font-size: 1.25em;
@@ -639,6 +644,10 @@
     animation: slide-up .5s ease-in-out forwards;
 }
 
+/*Main - location.html*/
+
+
+
 /*Footer*/
 
 .container--between-footer p {
@@ -681,12 +690,27 @@
     display: flex;
     flex-direction: column;
     padding: 2em 0;
-    gap: 1em;
+    gap: 2em;
     align-items: center;
     margin-top: 5em;
-    margin-bottom: -4em;
     background-color: var(--red, #FF4605);
     color: var(--white, #ffffff);
+}
+
+.inf--footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--gap);
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    font-weight: 700;
 }
 
 .page__flap a {
@@ -700,7 +724,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .page__flap {
+    .inf--footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
