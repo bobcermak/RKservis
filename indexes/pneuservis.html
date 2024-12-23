@@ -25,7 +25,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <menu class="page__nav__hamburger-menu">
+            <menu class="page__nav__hamburger-menu" id="mobile-menu">
                 <li><a href="../index.html">Úvod</a></li>
                 <li><a href="location.html">Lokace</a></li>
                 <li class="dropdown-hamburger">
@@ -38,7 +38,7 @@
                 <li class="contact"><a href="contact.html">Kontaktuj nás</a></li>
             </menu>
             <!--Desktop-->
-            <menu class="page__nav__menu">
+            <menu class="page__nav__menu" id="desktop-menu">
                 <li><a href="../index.html">Úvod</a></li>
                 <li><a href="location.html">Lokace</a></li>
                 <li class="dropdown">
@@ -53,7 +53,37 @@
         </nav>
     </header>
     <main class="page__content">
-        
+        <section class="page__offers--another-pages--fix container--bg" id="offers">
+            <div class="container--ad container--ad--another-pages--fix">
+                <h2 class="half-max--size container--ad__h2">Rychlý<span class="mark--red">Pneuservis</span></h2>
+            </div>
+        </section>
+        <div class="container--between-section container--between-section--another-pages">
+            <p class="half-max--size container--fix">Jak Ti Můžeme Pomoct<span class="mark--red">?</span></p>
+        </div>
+        <section class="page__about page__about--another-pages" id="offers">
+            <div class="container--fix header-about">
+                <picture>
+                    <source srcset="../images/back/everything-ok.avif" type="image/avif">
+                    <source srcset="../images/back/everything-ok.webp" type="image/webp">
+                    <img class="img-responsive header-about__img" src="../images/original/everything-ok.jpeg" loading="lazy" width="600px" height="412px" alt="RKservis - Oprava Vozů">
+                </picture>
+            </div>
+            <div class="container--about container--about--another-pages">
+                <div>
+                    <p class="header-about--main-p container--fix half-max--size"><b>Letní Přezutí <span>:</span></b></p>
+                    <p class="container--fix">Začíná se oteplovat a vy máte pořád zimní gumy? Stačí nám zavolat a mi je přezujeme!</p>
+                </div>
+                <div>
+                    <p class="header-about--main-p container--fix half-max--size"><b>Zimní Přezutí <span>:</span></b></p>
+                    <p class="container--fix">Blíží se zima? Máte pořád letní gumy? Stačí nám zavolat a mi je přezujeme!</p>
+                </div>
+                <div>
+                    <p class="header-about--main-p container--fix half-max--size"><b>Opravy <span>:</span></b></p>
+                    <p class="container--fix">Utíká vám vzduch s penumatiky? Zavolejte nám a my to vyřešíme!</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="page__footer">
         <section class="container--between-section container--between-footer circle">
@@ -82,12 +112,12 @@
         </section>
         <section class="page__flap">
             <div class="inf--footer">
-                <p class="container--fix location"><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/%C5%A0ibe%C5%88%C3%A1k,+506+01+Ji%C4%8D%C3%ADn+1/@50.4367497,15.3684487,17z/data=!3m1!4b1!4m6!3m5!1s0x470ea38eafd5e803:0x3eb8891b17d30b39!8m2!3d50.4367497!4d15.3710236!16s%2Fg%2F119vk0w_q?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D">Šibeňák, 506 01 Jičín 1</a></p> <!--::before-->
-                <p class="container--fix whatsapp"><strong>Tel.:</strong> <a href="tel:+420607204866">607 204 866</a></p> <!--::before-->
+                <p class="container--fix location"><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/%C5%A0ibe%C5%88%C3%A1k,+506+01+Ji%C4%8D%C3%ADn+1/@50.4367497,15.3684487,17z/data=!3m1!4b1!4m6!3m5!1s0x470ea38eafd5e803:0x3eb8891b17d30b39!8m2!3d50.4367497!4d15.3710236!16s%2Fg%2F119vk0w_q?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Šibeňák, 506 01 Jičín 1</a></p> <!--::before-->
+                <p class="container--fix whatsapp"><strong>Tel.:</strong> <a href="tel:+420607204866" target="_blank">607 204 866</a></p> <!--::before-->
                 <p class="container--fix chrome"><strong>Web:</strong> <a href="https://www.domena.cz" target="_blank">www.domena.cz</a></p> <!--::before-->
             </div>
             <div class="copyright">
-                <p class="container--fix">&copy; 2024 RK Servis | Vytvořil <a href="#">BobCermak</a></p></p>
+                <p class="container--fix">&copy; 2024 RK Servis | Vytvořil <a href="#" target="_blank">BobCermak</a></p></p>
             </div>
         </section>
     </footer>

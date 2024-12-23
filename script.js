@@ -80,31 +80,31 @@ document.querySelectorAll('.dropdown-hamburger').forEach(function(element) {
     });
 });
 
-
 //Animations
 
 document.addEventListener("DOMContentLoaded", () => {
-    const animationoffers = [
-      { element: document.querySelector(".container--ad"), delay: 400 },
-      { element: document.querySelector(".cards__1"), delay: 700 },
-      { element: document.querySelector(".cards__2"), delay: 900 },
-      { element: document.querySelector(".cards__3"), delay: 1100 }
-    ];
-    animationoffers.forEach(({ element, delay }) => {
-      setTimeout(() => {
-        if (element) element.classList.add("animate");
-      }, delay);
-    });
-    const animationLocation = [
-        { element: document.querySelector(".container--ad--location"), delay: 400 },
-        { element: document.querySelector(".page__iframe"), delay: 700 },
-      ];
-      animationLocation.forEach(({ element, delay }) => {
+    const applyAnimations = (animations) => {
+      animations.forEach(({ element, delay }) => {
         setTimeout(() => {
           if (element) element.classList.add("animate");
         }, delay);
       });
-});
+    };
+  
+    const animationOffers = [
+      { element: document.querySelector(".container--ad"), delay: 400 },
+      { element: document.querySelector(".cards__1"), delay: 700 },
+      { element: document.querySelector(".cards__2"), delay: 900 },
+      { element: document.querySelector(".cards__3"), delay: 1100 },
+    ];
+  
+    const animationLocation = [
+      { element: document.querySelector(".container--ad--another-pages"), delay: 400 },
+      { element: document.querySelector(".page__iframe"), delay: 700 },
+    ];
+  
+    applyAnimations([...animationOffers, ...animationLocation]);
+});  
 document.addEventListener("DOMContentLoaded", function () {
     const animateElements = (elements) => {
         elements.forEach(({ element, delay }) => {

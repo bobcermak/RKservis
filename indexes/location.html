@@ -25,7 +25,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <menu class="page__nav__hamburger-menu">
+            <menu class="page__nav__hamburger-menu" id="mobile-menu">
                 <li><a href="../index.html">Úvod</a></li>
                 <li><a class="activeLi" href="location.html">Lokace</a></li>
                 <li class="dropdown-hamburger">
@@ -38,7 +38,7 @@
                 <li class="contact"><a href="contact.html">Kontaktuj nás</a></li>
             </menu>
             <!--Desktop-->
-            <menu class="page__nav__menu">
+            <menu class="page__nav__menu" id="desktop-menu">
                 <li><a href="../index.html">Úvod</a></li>
                 <li><a class="activeLi" href="location.html">Lokace</a></li>
                 <li class="dropdown">
@@ -53,23 +53,23 @@
         </nav>
     </header>
     <main class="page__content">
-        <section class="page__about--location container--bg">
-            <div class="container--ad container--ad--location">
+        <section class="page__offers--another-pages container--bg" id="offers">
+            <div class="container--ad container--ad--another-pages">
                 <h2 class="max--size container--ad__h2">Lokace<span class="mark--red">!</span></h2>
             </div>
         </section>
-        <div class="container--between-section container--between-section--location">
+        <div class="container--between-section container--between-section--another-pages">
             <p class="half-max--size container--fix">Kde Nás Najdeš<span class="mark--red">?</span></p>
             <p class="mid--size container--fix">Najdeš nás u Šibeňáku v Jičíně</p>
         </div>
-        <section class="page__iframe">
-            <iframe class="iframe--fix iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.233582174746!2d15.371023699999999!3d50.43674970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ea3749806a9e5%3A0xa27ecff1879ee40!2sRKservis!5e0!3m2!1scs!2scz!4v1733585604472!5m2!1scs!2scz" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa zobrazující umístění RKservisu v Jičíně"></iframe>
+        <section class="page__iframe" id="iframe">
+            <iframe class="iframe--fix iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.233582174746!2d15.371023699999999!3d50.43674970000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ea3749806a9e5%3A0xa27ecff1879ee40!2sRKservis!5e0!3m2!1scs!2scz!4v1733585604472!5m2!1scs!2scz" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa zobrazující umístění RKservisu v Jičíně" aria-label="Mapa RKservisu"></iframe>
         </section>
         <div class="container--between-section">
             <p class="half-max--size container--fix">Máš Nějaké Otázky<span class="mark--red">?</span></p>
             <p class="mid--size container--fix">Zavolej Nám Na <strong>+420 607 204 866</strong></p>
         </div>
-        <section class="page__reviews">
+        <section class="page__reviews" id="reviews">
             <header class="header-reviews circle">
                 <h2 class="mark--red container--fix">RECENZE</h2>
             </header>
@@ -77,7 +77,7 @@
                 <p class="half-max--size"><b>Co Se O Nás Povídá<span class="mark--red">?</span></b></p>
             </div>
             <footer class="footer-reviews">
-                <a href="#" class="card--bigger footer-reviews__c-1">
+                <a href="https://www.google.com/search?sa=X&sca_esv=c2e000b3fcba9de8&rlz=1C1GCEA_enCZ961CZ961&hl=cs-CZ&tbm=lcl&sxsrf=ADLYWILWPzFI0LDeWIAPCFyGiv0rMW24og:1734974844711&q=RKservis%20Recenze&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyNza0MDQxMDGxMDEyMTUxtTTawMj4ilEgyLs4tagss1ghKDU5Na8qdRErhhAAvl2aYT8AAAA&rldimm=731814044842454592&ved=0CBIQ5foLahcKEwjYsvn6tL6KAxUAAAAAHQAAAAAQCw&biw=1920&bih=953&dpr=1#lkt=LocalPoiReviews&arid=ChdDSUhNMG9nS0VJQ0FnSURyaXVha2l3RRAB" class="card--bigger footer-reviews__c-1" target="_blank" aria-label="Karta Recenze Evy Kočířové">
                     <header>
                         <figure class="card-figure--fix">
                             <picture>
@@ -95,7 +95,7 @@
                         <p class="mark--red container--fix">Spokojený Zákazník</p>
                     </footer>
                 </a>
-                <a href="#" class="card--bigger border--red footer-reviews__c-2">
+                <a href="https://www.google.com/search?sa=X&sca_esv=c2e000b3fcba9de8&rlz=1C1GCEA_enCZ961CZ961&hl=cs-CZ&tbm=lcl&sxsrf=ADLYWILWPzFI0LDeWIAPCFyGiv0rMW24og:1734974844711&q=RKservis%20Recenze&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyNza0MDQxMDGxMDEyMTUxtTTawMj4ilEgyLs4tagss1ghKDU5Na8qdRErhhAAvl2aYT8AAAA&rldimm=731814044842454592&ved=0CBYQ5foLahcKEwjYsvn6tL6KAxUAAAAAHQAAAAAQCw&biw=1920&bih=953&dpr=1#lkt=LocalPoiReviews&arid=ChdDSUhNMG9nS0VJQ0FnSURaeGJuU29RRRAB" class="card--bigger border--red footer-reviews__c-2" target="_blank" aria-label="Karta Recenze Daniela">
                     <header>
                         <figure class="card-figure--fix">
                             <picture>
@@ -113,7 +113,7 @@
                         <p class="mark--red container--fix">Spokojený Zákazník</p>
                     </footer>
                 </a>
-                <a href="#" class="card--bigger footer-reviews__c-3">
+                <a href="https://www.google.com/search?sa=X&sca_esv=c2e000b3fcba9de8&rlz=1C1GCEA_enCZ961CZ961&hl=cs-CZ&tbm=lcl&sxsrf=ADLYWILWPzFI0LDeWIAPCFyGiv0rMW24og:1734974844711&q=RKservis%20Recenze&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyNza0MDQxMDGxMDEyMTUxtTTawMj4ilEgyLs4tagss1ghKDU5Na8qdRErhhAAvl2aYT8AAAA&rldimm=731814044842454592&ved=0CCUQ5foLahcKEwjYsvn6tL6KAxUAAAAAHQAAAAAQCw&biw=1920&bih=953&dpr=1#lkt=LocalPoiReviews&arid=ChZDSUhNMG9nS0VJQ0FnSUMtMDhMb0RnEAE" class="card--bigger footer-reviews__c-3" target="_blank" aria-label="Karta Recenze Petra Kousala">
                     <header>
                         <figure class="card-figure--fix">
                             <picture>
@@ -161,12 +161,12 @@
         </section>
         <section class="page__flap">
             <div class="inf--footer">
-                <p class="container--fix location"><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/%C5%A0ibe%C5%88%C3%A1k,+506+01+Ji%C4%8D%C3%ADn+1/@50.4367497,15.3684487,17z/data=!3m1!4b1!4m6!3m5!1s0x470ea38eafd5e803:0x3eb8891b17d30b39!8m2!3d50.4367497!4d15.3710236!16s%2Fg%2F119vk0w_q?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D">Šibeňák, 506 01 Jičín 1</a></p> <!--::before-->
-                <p class="container--fix whatsapp"><strong>Tel.:</strong> <a href="tel:+420607204866">607 204 866</a></p> <!--::before-->
+                <p class="container--fix location"><strong>Adresa:</strong> <a href="https://www.google.cz/maps/place/%C5%A0ibe%C5%88%C3%A1k,+506+01+Ji%C4%8D%C3%ADn+1/@50.4367497,15.3684487,17z/data=!3m1!4b1!4m6!3m5!1s0x470ea38eafd5e803:0x3eb8891b17d30b39!8m2!3d50.4367497!4d15.3710236!16s%2Fg%2F119vk0w_q?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">Šibeňák, 506 01 Jičín 1</a></p> <!--::before-->
+                <p class="container--fix whatsapp"><strong>Tel.:</strong> <a href="tel:+420607204866" target="_blank">607 204 866</a></p> <!--::before-->
                 <p class="container--fix chrome"><strong>Web:</strong> <a href="https://www.domena.cz" target="_blank">www.domena.cz</a></p> <!--::before-->
             </div>
             <div class="copyright">
-                <p class="container--fix">&copy; 2024 RK Servis | Vytvořil <a href="#">BobCermak</a></p></p>
+                <p class="container--fix">&copy; 2024 RK Servis | Vytvořil <a href="#" target="_blank">BobCermak</a></p></p>
             </div>
         </section>
     </footer>
