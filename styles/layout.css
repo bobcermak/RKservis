@@ -1,9 +1,3 @@
-/*Safari*/
-
-a {
-    -webkit-text-decoration: none;
-} 
-
 /*Header*/
 
 .page__header {
@@ -796,3 +790,10 @@ a {
 .page__footer--fix {
     margin-top: -5em;
 }
+
+/*Safari*/
+
+a {
+    -webkit-text-decoration: none;
+    color: var(--white, #ffffff);
+} 
