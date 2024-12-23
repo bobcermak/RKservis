@@ -1,3 +1,9 @@
+/*Safari*/
+
+a {
+    -webkit-text-decoration: none;
+} 
+
 /*Header*/
 
 .page__header {

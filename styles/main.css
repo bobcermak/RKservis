@@ -34,13 +34,7 @@
     }
 }
 
-@layer init {
-
-    /*Safari*/
-
-    a {
-        -webkit-text-decoration: none;
-    }    
+@layer init {   
 
     /*Presets*/
 
