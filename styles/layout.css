@@ -646,7 +646,36 @@
 
 /*Main - location.html*/
 
+/*Section - page__about--location*/
 
+.page__about--location {
+    height: 42.5dvh;
+    background-position: bottom center;
+}
+
+.page__about--location .container--ad__h2 {
+    font-size: clamp(2em, 10vw, 2.5em);
+    padding: var(--padding) calc(var(--padding) * 5);
+}
+
+/*Section - page__iframe*/
+
+.page__iframe {
+    margin: 0 .5em;
+    height: 28dvh;
+    opacity: 0;
+}
+
+.page__iframe iframe {
+    margin: 0 auto;
+    height: 100%;
+}
+
+/*Delay*/
+
+.page__about--location.animate, .page__iframe.animate {
+    animation: slide-up .5s ease-in-out forwards;
+}
 
 /*Footer*/
 

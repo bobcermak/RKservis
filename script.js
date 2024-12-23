@@ -95,6 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
         if (element) element.classList.add("animate");
       }, delay);
     });
+    const animationLocation = [
+        { element: document.querySelector(".container--ad--location"), delay: 400 },
+        { element: document.querySelector(".page__iframe"), delay: 700 },
+      ];
+      animationLocation.forEach(({ element, delay }) => {
+        setTimeout(() => {
+          if (element) element.classList.add("animate");
+        }, delay);
+      });
 });
 document.addEventListener("DOMContentLoaded", function () {
     const animateElements = (elements) => {

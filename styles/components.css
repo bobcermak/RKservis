@@ -125,6 +125,12 @@
   }
 }
 
+/*Location*/
+
+.container--between-section--location {
+  margin-top: 0;
+}
+
 /*Buttons*/
 
 .button {
