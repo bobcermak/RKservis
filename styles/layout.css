@@ -801,9 +801,9 @@ a {
 /*Fix - colors*/
 
 .fix--black {
-    color: var(--black, #000000);
+    -webkit-color: var(--black, #000000);
 }
 
 .fix--white {
-    color: var(--white, #ffffff);
+    -webkit-color: var(--white, #ffffff);
 }
