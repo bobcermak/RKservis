@@ -799,3 +799,7 @@ a {
     -webkit-appearance: none;
     appearance: none;
 }
+
+.container--ad p {
+    color: var(--white, #ffffff);
+}
