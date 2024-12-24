@@ -796,14 +796,5 @@
 
 a {
     -webkit-text-decoration: none;
-}
-
-/*Fix - colors*/
-
-.fix--black {
     -webkit-color: var(--black, #000000);
-}
-
-.fix--white {
-    -webkit-color: var(--white, #ffffff);
 }
