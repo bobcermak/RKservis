@@ -796,5 +796,7 @@
 
 a {
     -webkit-text-decoration: none;
+    -webkit-appearance: none;
+    appearance: none;
     color: var(--black, #000000);
 }
