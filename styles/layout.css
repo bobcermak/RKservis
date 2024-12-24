@@ -654,7 +654,6 @@
 }
 
 .page__offers--another-pages .container--ad__h2 {
-    font-size: clamp(2em, 10vw, 2.5em);
     padding: var(--padding) calc(var(--padding) * 5);
 }
 
