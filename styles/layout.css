@@ -798,11 +798,4 @@ a {
     -webkit-text-decoration: none;
     -webkit-appearance: none;
     appearance: none;
-    color: var(--black, #000000);
-}
-
-/*Fix - colors*/
-
-.fix--white {
-    color: var(--white, #ffffff);
 }
