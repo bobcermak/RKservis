@@ -309,11 +309,14 @@
     color: var(--red, #FF4605);
 }
 
-.container--ad__p {
+.container--ad__a {
     margin-top: -.3em;
+    padding-bottom: 1em;
+    color: var(--white, #ffffff);
+    text-decoration: none;
 }
 
-.container--ad__p > strong > span {
+.container--ad__a > strong > span {
     font-weight: 400;
 }
 
