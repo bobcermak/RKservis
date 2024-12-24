@@ -792,6 +792,18 @@
 
 /*Safari*/
 
+/*Text - decoration*/
+
 a {
     -webkit-text-decoration: none;
+}
+
+/*Fix - colors*/
+
+.fix--black {
+    color: var(--black, #000000);
+}
+
+.fix--white {
+    color: var(--white, #ffffff);
 }

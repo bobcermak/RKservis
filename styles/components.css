@@ -97,6 +97,7 @@
   margin-bottom: 5em;
   padding: 3.5em;
   background-color: var(--gray, #F8F7F7);
+  color: var(--black, #000000);
 }
 
 .container--between-section h2 span {

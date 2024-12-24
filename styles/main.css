@@ -94,12 +94,10 @@
 
     .mark--red {
         color: var(--red, #FF4605);
-        -webkit-text-decoration: var(--red, #FF4605);
     }
 
     .border--red {
         border: 1px solid var(--red, #FF4605);
-        -webkit-text-decoration: var(--red, #FF4605);
     }
 
     /*Margins*/
