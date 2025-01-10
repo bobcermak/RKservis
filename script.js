@@ -161,6 +161,6 @@ document.addEventListener("DOMContentLoaded", function () {
     createObserver(".page__reviews", reviewsAnimationData);
 });
 
-/*Footer*/
+//Footer
 
 document.getElementById('year').textContent = new Date().getFullYear();
