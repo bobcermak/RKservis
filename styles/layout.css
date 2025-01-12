@@ -1,3 +1,9 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
 /*Header*/
 
 .page__header {
@@ -259,6 +265,10 @@
 }
 
 /*Main - index.html*/
+
+.page__content {
+    flex-grow: 1;
+}
 
 /*Section - page__offers*/
 
