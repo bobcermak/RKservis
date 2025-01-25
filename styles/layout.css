@@ -586,7 +586,7 @@
 /*Delay*/
 
 .container--skills-header-main.animate, .footer-skills__c-1.animate, .footer-skills__c-2.animate, .footer-skills__c-3.animate, .footer-skills__c-4.animate, .footer-skills__c-5.animate, .footer-skills__c-6.animate {
-    animation: slide-up .5s ease-in-out forwards;
+    animation: slide-up .35s ease-in-out forwards;
 }
 
 /*Section - page__reviews*/
@@ -655,7 +655,7 @@
 /*Delay*/
 
 .header-reviews.animate, .container--reviews.animate, .footer-reviews__c-1.animate, .footer-reviews__c-2.animate, .footer-reviews__c-3.animate {
-    animation: slide-up .5s ease-in-out forwards;
+    animation: slide-up .3s ease-in-out forwards;
 }
 
 /*Main - location.html*/
@@ -687,7 +687,7 @@
 /*Delay*/
 
 .page__offers--another-pages.animate, .page__iframe.animate {
-    animation: slide-up .5s ease-in-out forwards;
+    animation: slide-up 0s ease-in-out forwards;
 }
 
 /*Main - autoservis.html*/
