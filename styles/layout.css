@@ -275,17 +275,27 @@
 
 .page__offers {
     display: block;
-    height: 900px;
+    height: 91dvh;
 }
 
 .container--bg {
     display: flex;
     justify-content: center;
-    background-image: url(../images/back/bg-car.avif), url(../images/back/bg-car.webp), url(../images/original/bg-car.jpg);
     background-attachment: fixed;
-    height: 750px;
+    height: 75dvh;
     background-position: left center;
     background-size: cover;
+    background-image: url(../images/original/bg-car.jpg);
+    background-image: -webkit-image-set(
+        url(../images/back/bg-car.avif) type("image/avif"),
+        url(../images/back/bg-car.webp) type("image/webp"),
+        url(../images/original/bg-car.jpg) type("image/jpeg")
+    );
+    background-image: image-set(
+        url(../images/back/bg-car.avif) type("image/avif"),
+        url(../images/back/bg-car.webp) type("image/webp"),
+        url(../images/original/bg-car.jpg) type("image/jpeg")
+    );
 }
 
 .container--ad {
@@ -372,15 +382,45 @@
 }
 
 .cards__1::after {
-    background-image: url(../images/back/certificate.avif), url(../images/back/certificate.webp), url(../images/original/certificate.jpg);
+    background-image: url(../images/original/certificate.jpg);
+    background-image: -webkit-image-set(
+        url(../images/back/certificate.avif) type("image/avif"),
+        url(../images/back/certificate.webp) type("image/webp"),
+        url(../images/original/certificate.jpg) type("image/jpeg")
+    );
+    background-image: image-set(
+        url(../images/back/certificate.avif) type("image/avif"),
+        url(../images/back/certificate.webp) type("image/webp"),
+        url(../images/original/certificate.jpg) type("image/jpeg")
+    );
 }
 
 .cards__2::after {
-    background-image: url(../images/back/fast-pneuservis.avif), url(../images/back/fast-pneuservis.webp), url(../images/original/fast-pneuservis.jpg);
+    background-image:url(../images/original/fast-pneuservis.jpg);
+    background-image: -webkit-image-set(
+        url(../images/back/fast-pneuservis.avif) type("image/avif"),
+        url(../images/back/fast-pneuservis.webp) type("image/webp"),
+        url(../images/original/fast-pneuservis.jpg) type("image/jpeg")
+    );
+    background-image: image-set(
+        url(../images/back/fast-pneuservis.avif) type("image/avif"),
+        url(../images/back/fast-pneuservis.webp) type("image/webp"),
+        url(../images/original/fast-pneuservis.jpg) type("image/jpeg")
+    );
 }
 
 .cards__3::after {
-    background-image: url(../images/back/call-us.avif), url(../images/back/call-us.webp), url(../images/original/call-us.jpg);
+    background-image: url(../images/original/call-us.jpg);
+    background-image: -webkit-image-set(
+        url(../images/back/call-us.avif) type("image/avif"),
+        url(../images/back/call-us.webp) type("image/webp"),
+        url(../images/original/call-us.jpg) type("image/jpeg")
+    );
+    background-image: image-set(
+        url(../images/back/call-us.avif) type("image/avif"),
+        url(../images/back/call-us.webp) type("image/webp"),
+        url(../images/original/call-us.jpg) type("image/jpeg")
+    );
 }
 
 .cards__1:hover::after, .cards__2:hover::after, .cards__3:hover::after {
