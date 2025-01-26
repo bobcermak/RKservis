@@ -13,6 +13,7 @@
     left: var(--header--fixed);
     right: var(--header--fixed);
     background-color: var(--white, #ffffff);
+    height: 9vh;
     height: 9dvh;
     font-size: 1em;
     transition: top 0.3s;
@@ -275,6 +276,7 @@
 
 .page__offers {
     display: block;
+    height: 91vh;
     height: 91dvh;
 }
 
@@ -282,6 +284,7 @@
     display: flex;
     justify-content: center;
     background-attachment: fixed;
+    height: 75vh;
     height: 75dvh;
     background-position: left center;
     background-size: cover;
@@ -703,6 +706,7 @@
 /*Section - page__offers--location*/
 
 .page__offers--another-pages {
+    height: 42.5vh;
     height: 42.5dvh;
     background-position: left bottom;
 }
@@ -715,6 +719,7 @@
 
 .page__iframe {
     margin: 0 .5em;
+    height: 28vh;
     height: 28dvh;
     opacity: 0;
 }
@@ -737,6 +742,7 @@
 .page__offers--another-pages--fix {
     display: flex;
     align-items: center;
+    height: 42.5vh;
     height: 42.5dvh;
     background-position: left bottom;
 }
