@@ -283,7 +283,7 @@
     justify-content: center;
     background-image: url(../images/back/bg-car.avif), url(../images/back/bg-car.webp), url(../images/original/bg-car.jpg);
     background-attachment: fixed;
-    height: 75dvh;
+    height: 750px;
     background-position: left center;
     background-size: cover;
 }
