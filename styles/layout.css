@@ -284,7 +284,7 @@
     background-image: url(../images/back/bg-car.avif), url(../images/back/bg-car.webp), url(../images/original/bg-car.jpg);
     background-attachment: fixed;
     height: 75dvh;
-    background-position: center center;
+    background-position: left center;
     background-size: cover;
 }
 
@@ -664,7 +664,7 @@
 
 .page__offers--another-pages {
     height: 42.5dvh;
-    background-position: bottom center;
+    background-position: left bottom;
 }
 
 .page__offers--another-pages .container--ad__h2 {
@@ -698,7 +698,7 @@
     display: flex;
     align-items: center;
     height: 42.5dvh;
-    background-position: bottom center;
+    background-position: left bottom;
 }
 
 /*Section - page__about--another-pages*/

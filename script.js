@@ -117,9 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     const getThreshold = () => {
         const width = window.innerWidth;
-        if (width <= 480) return .05;
-        else if (width <= 768) return .15;
-        else return .35;
+        if (width <= 480) return .025;
+        else if (width <= 768) return .10;
+        else return .15;
     };
     const createObserver = (sectionSelector, animationData) => {
         const observer = new IntersectionObserver((entries, observer) => {
