@@ -283,7 +283,6 @@
 .container--bg {
     display: flex;
     justify-content: center;
-    /* background-attachment: fixed; */
     height: 75vh;
     height: 75dvh;
     background-position: left center;
@@ -299,6 +298,12 @@
         url(../images/back/bg-car.webp) type("image/webp"),
         url(../images/original/bg-car.jpg) type("image/jpeg")
     );
+}
+
+@media screen and (min-width: 768px) {
+    .container--bg {
+        background-attachment: fixed;
+    }
 }
 
 .container--ad {
