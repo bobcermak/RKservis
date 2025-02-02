@@ -283,7 +283,7 @@
 .container--bg {
     display: flex;
     justify-content: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 75vh;
     height: 75dvh;
     background-position: left center;
