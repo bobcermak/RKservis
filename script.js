@@ -163,4 +163,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Footer
 
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
