@@ -214,7 +214,7 @@
 .card--bigger > header::after {
   content: "";
   display: block;
-  background-image: url(../images/back/stars-transparent.avif);
+  background-image: url(../images/bckps/stars-transparent.avif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

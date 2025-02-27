@@ -289,13 +289,13 @@
     background-size: cover;
     background-image: url(../images/original/bg-car.jpg);
     background-image: -webkit-image-set(
-        url(../images/back/bg-car.avif) type("image/avif"),
-        url(../images/back/bg-car.webp) type("image/webp"),
+        url(../images/bckps/bg-car.avif) type("image/avif"),
+        url(../images/bckps/bg-car.webp) type("image/webp"),
         url(../images/original/bg-car.jpg) type("image/jpeg")
     );
     background-image: image-set(
-        url(../images/back/bg-car.avif) type("image/avif"),
-        url(../images/back/bg-car.webp) type("image/webp"),
+        url(../images/bckps/bg-car.avif) type("image/avif"),
+        url(../images/bckps/bg-car.webp) type("image/webp"),
         url(../images/original/bg-car.jpg) type("image/jpeg")
     );
 }
@@ -392,13 +392,13 @@
 .cards__1::after {
     background-image: url(../images/original/certificate.jpg);
     background-image: -webkit-image-set(
-        url(../images/back/certificate.avif) type("image/avif"),
-        url(../images/back/certificate.webp) type("image/webp"),
+        url(../images/bckps/certificate.avif) type("image/avif"),
+        url(../images/bckps/certificate.webp) type("image/webp"),
         url(../images/original/certificate.jpg) type("image/jpeg")
     );
     background-image: image-set(
-        url(../images/back/certificate.avif) type("image/avif"),
-        url(../images/back/certificate.webp) type("image/webp"),
+        url(../images/bckps/certificate.avif) type("image/avif"),
+        url(../images/bckps/certificate.webp) type("image/webp"),
         url(../images/original/certificate.jpg) type("image/jpeg")
     );
 }
@@ -406,13 +406,13 @@
 .cards__2::after {
     background-image:url(../images/original/fast-pneuservis.jpg);
     background-image: -webkit-image-set(
-        url(../images/back/fast-pneuservis.avif) type("image/avif"),
-        url(../images/back/fast-pneuservis.webp) type("image/webp"),
+        url(../images/bckps/fast-pneuservis.avif) type("image/avif"),
+        url(../images/bckps/fast-pneuservis.webp) type("image/webp"),
         url(../images/original/fast-pneuservis.jpg) type("image/jpeg")
     );
     background-image: image-set(
-        url(../images/back/fast-pneuservis.avif) type("image/avif"),
-        url(../images/back/fast-pneuservis.webp) type("image/webp"),
+        url(../images/bckps/fast-pneuservis.avif) type("image/avif"),
+        url(../images/bckps/fast-pneuservis.webp) type("image/webp"),
         url(../images/original/fast-pneuservis.jpg) type("image/jpeg")
     );
 }
@@ -420,13 +420,13 @@
 .cards__3::after {
     background-image: url(../images/original/call-us.jpg);
     background-image: -webkit-image-set(
-        url(../images/back/call-us.avif) type("image/avif"),
-        url(../images/back/call-us.webp) type("image/webp"),
+        url(../images/bckps/call-us.avif) type("image/avif"),
+        url(../images/bckps/call-us.webp) type("image/webp"),
         url(../images/original/call-us.jpg) type("image/jpeg")
     );
     background-image: image-set(
-        url(../images/back/call-us.avif) type("image/avif"),
-        url(../images/back/call-us.webp) type("image/webp"),
+        url(../images/bckps/call-us.avif) type("image/avif"),
+        url(../images/bckps/call-us.webp) type("image/webp"),
         url(../images/original/call-us.jpg) type("image/jpeg")
     );
 }
