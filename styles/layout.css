@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
 }
 
 /*Header*/
@@ -14,7 +14,7 @@
     right: var(--header--fixed);
     background-color: var(--white, #ffffff);
     height: 9vh;
-    height: 9dvh;
+    height: 9svh;
     font-size: 1em;
     transition: top 0.3s;
     z-index: 10000;
@@ -277,14 +277,14 @@
 .page__offers {
     display: block;
     height: 91vh;
-    height: 91dvh;
+    height: 91svh;
 }
 
 .container--bg {
     display: flex;
     justify-content: center;
     height: 75vh;
-    height: 75dvh;
+    height: 75svh;
     background-position: left center;
     background-size: cover;
     background-image: url(../images/original/bg-car.jpg);
@@ -712,7 +712,7 @@
 
 .page__offers--another-pages {
     height: 42.5vh;
-    height: 42.5dvh;
+    height: 42.5svh;
     background-position: left bottom;
 }
 
@@ -725,7 +725,7 @@
 .page__iframe {
     margin: 0 .5em;
     height: 28vh;
-    height: 28dvh;
+    height: 28svh;
     opacity: 0;
 }
 
@@ -748,7 +748,7 @@
     display: flex;
     align-items: center;
     height: 42.5vh;
-    height: 42.5dvh;
+    height: 42.5svh;
     background-position: left bottom;
 }
 
