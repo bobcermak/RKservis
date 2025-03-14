@@ -822,6 +822,7 @@
     text-align: center;
     gap: var(--gap);
     width: 100%;
+    font-style: normal;
 }
 
 .copyright {
