@@ -71,7 +71,7 @@
 .page__nav__menu li a:not(.exclude)::after {
     content: '';
     position: absolute;
-    bottom: -.093em;
+    bottom: 0;
     left: 0;
     width: 0;
     height: .125em;
