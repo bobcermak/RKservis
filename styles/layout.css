@@ -829,10 +829,6 @@
     text-align: center;
 }
 
-.copyright a {
-    font-weight: 700;
-}
-
 .page__flap a {
     text-decoration: none;
     color: var(--white, #ffffff);
