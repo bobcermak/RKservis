@@ -851,14 +851,3 @@
 .page__footer--fix {
     margin-top: -5em;
 }
-
-/*Safari*/
-
-/*Text - decoration*/
-
-a {
-    -webkit-text-decoration: none;
-    -webkit-appearance: none;
-    appearance: none;
-    color: var(--black, #000000);
-}
